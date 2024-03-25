@@ -12,7 +12,7 @@ ScriptsOnlyBuild:
   serializedClasses: {}
   methodsToPreserve: []
   sceneClasses:
-    Assets/Scenes/SampleScene.unity:
+    Assets/Scenes/Main_room.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -44,9 +44,9 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 18004}
+      Script: {instanceID: 22868}
     - Class: 114
-      Script: {instanceID: 19350}
+      Script: {instanceID: 22872}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 135
@@ -250,12 +250,6 @@ ScriptsOnlyBuild:
     className: TestResultRendererCallback
   - hash:
       serializedVersion: 2
-      Hash: a045baf57790925a719f680036b6ca62
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: moving
-  - hash:
-      serializedVersion: 2
       Hash: b98001682cba83786775c9e415b89a61
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -452,12 +446,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
     className: TMP_SubMeshUI
-  - hash:
-      serializedVersion: 2
-      Hash: 1ac666db0ba35e1088a99f422d700ce9
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: ballcontroller
   - hash:
       serializedVersion: 2
       Hash: 9078325c2a6f6a2d9612ade897511860
@@ -890,7 +878,19 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: a045baf57790925a719f680036b6ca62
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: moving
+  - hash:
+      serializedVersion: 2
+      Hash: 1ac666db0ba35e1088a99f422d700ce9
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: ballcontroller
   platform: 13
   scenePathNames:
-  - Assets/Scenes/SampleScene.unity
-  playerPath: C:/Users/simd3/Downloads/PERSISTBALL/persist3.apk
+  - Assets/Scenes/Main_room.unity
+  playerPath: "C:/Users/simd3/OneDrive/\uBB38\uC11C/134.apk"
