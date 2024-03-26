@@ -3,16 +3,83 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - ballcontroller
     - moving
+    - startclick
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
+    Unity.TextMeshPro:
+    - TMPro.TMP_FontAsset
+    - TMPro.TMP_Settings
+    - TMPro.TMP_SpriteAsset
+    - TMPro.TMP_StyleSheet
+    Unity.TextMeshPro.dll:
+    - TMPro.TMP_FontAsset
+    - TMPro.TMP_Settings
+    - TMPro.TMP_SpriteAsset
+    - TMPro.TMP_StyleSheet
+    - TMPro.TextMeshProUGUI
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
-  serializedClasses: {}
-  methodsToPreserve: []
+    UnityEngine.UI.dll:
+    - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.EventSystems.StandaloneInputModule
+    - UnityEngine.UI.Button
+    - UnityEngine.UI.CanvasScaler
+    - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.Image
+    - UnityEngine.UI.Slider
+  serializedClasses:
+    Unity.TextMeshPro:
+    - TMPro.FaceInfo_Legacy
+    - TMPro.FontAssetCreationSettings
+    - TMPro.KerningTable
+    - TMPro.TMP_Character
+    - TMPro.TMP_FontFeatureTable
+    - TMPro.TMP_FontWeightPair
+    - TMPro.TMP_GlyphAdjustmentRecord
+    - TMPro.TMP_GlyphPairAdjustmentRecord
+    - TMPro.TMP_GlyphValueRecord
+    - TMPro.TMP_Sprite
+    - TMPro.TMP_SpriteCharacter
+    - TMPro.TMP_SpriteGlyph
+    - TMPro.TMP_Style
+    - TMPro.VertexGradient
+    UnityEngine.CoreModule:
+    - UnityEngine.Events.ArgumentCache
+    - UnityEngine.Events.PersistentCallGroup
+    - UnityEngine.Events.PersistentListenerMode
+    UnityEngine.TextCoreFontEngineModule:
+    - UnityEngine.TextCore.FaceInfo
+    - UnityEngine.TextCore.Glyph
+    - UnityEngine.TextCore.GlyphMetrics
+    - UnityEngine.TextCore.GlyphRect
+    UnityEngine.UI:
+    - UnityEngine.UI.AnimationTriggers
+    - UnityEngine.UI.Button/ButtonClickedEvent
+    - UnityEngine.UI.ColorBlock
+    - UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
+    - UnityEngine.UI.Navigation
+    - UnityEngine.UI.Slider/SliderEvent
+    - UnityEngine.UI.SpriteState
+  methodsToPreserve:
+  - assembly: Assembly-CSharp
+    fullTypeName: startclick
+    methodName: goto_Setting
+  - assembly: Assembly-CSharp
+    fullTypeName: startclick
+    methodName: goto_Game
+  - assembly: Assembly-CSharp
+    fullTypeName: moving
+    methodName: SaveAim
+  - assembly: Assembly-CSharp
+    fullTypeName: startclick
+    methodName: goto_Main
+  - assembly: Assembly-CSharp
+    fullTypeName: moving
+    methodName: ResetAim
   sceneClasses:
-    Assets/Scenes/Main_room.unity:
+    Assets/Scenes/Game_playing.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -44,9 +111,9 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 22868}
+      Script: {instanceID: 18004}
     - Class: 114
-      Script: {instanceID: 22872}
+      Script: {instanceID: 22886}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 135
@@ -54,6 +121,156 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    Assets/Scenes/Main_room.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 16654}
+    - Class: 114
+      Script: {instanceID: 17230}
+    - Class: 114
+      Script: {instanceID: 17648}
+    - Class: 114
+      Script: {instanceID: 17850}
+    - Class: 114
+      Script: {instanceID: 18004}
+    - Class: 114
+      Script: {instanceID: 18140}
+    - Class: 114
+      Script: {instanceID: 19116}
+    - Class: 114
+      Script: {instanceID: 19364}
+    - Class: 114
+      Script: {instanceID: 20052}
+    - Class: 114
+      Script: {instanceID: 20594}
+    - Class: 114
+      Script: {instanceID: 21058}
+    - Class: 114
+      Script: {instanceID: 22886}
+    - Class: 114
+      Script: {instanceID: 23380}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 135
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/Setting_room.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 16654}
+    - Class: 114
+      Script: {instanceID: 17648}
+    - Class: 114
+      Script: {instanceID: 17850}
+    - Class: 114
+      Script: {instanceID: 18004}
+    - Class: 114
+      Script: {instanceID: 18140}
+    - Class: 114
+      Script: {instanceID: 19982}
+    - Class: 114
+      Script: {instanceID: 20052}
+    - Class: 114
+      Script: {instanceID: 20594}
+    - Class: 114
+      Script: {instanceID: 20744}
+    - Class: 114
+      Script: {instanceID: 21058}
+    - Class: 114
+      Script: {instanceID: 22886}
+    - Class: 114
+      Script: {instanceID: 23380}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 135
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -248,6 +465,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
     className: TestResultRendererCallback
+  - hash:
+      serializedVersion: 2
+      Hash: 5e9fb62b82d729a9341e312ba165aa22
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: moving
   - hash:
       serializedVersion: 2
       Hash: b98001682cba83786775c9e415b89a61
@@ -880,17 +1103,31 @@ ScriptsOnlyBuild:
     className: UnityOnSliderValueChangedMessageListener
   - hash:
       serializedVersion: 2
-      Hash: a045baf57790925a719f680036b6ca62
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: moving
-  - hash:
-      serializedVersion: 2
       Hash: 1ac666db0ba35e1088a99f422d700ce9
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: ballcontroller
+  - hash:
+      serializedVersion: 2
+      Hash: fdfe96a50820502565930a0c59061789
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: startclick
+  - hash:
+      serializedVersion: 2
+      Hash: fbe05c12b60c88d40e80ca2d1f7bfad9
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: gotomainroom
+  - hash:
+      serializedVersion: 2
+      Hash: afa8f79ee0f64a105871ea7b1b22cef1
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: slider_event
   platform: 13
   scenePathNames:
   - Assets/Scenes/Main_room.unity
+  - Assets/Scenes/Game_playing.unity
+  - Assets/Scenes/Setting_room.unity
   playerPath: "C:/Users/simd3/OneDrive/\uBB38\uC11C/134.apk"

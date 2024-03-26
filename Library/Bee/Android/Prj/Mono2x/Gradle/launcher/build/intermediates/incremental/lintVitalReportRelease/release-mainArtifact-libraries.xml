@@ -1,9 +1,9 @@
 <libraries>
   <library
-      name="C:\unity\Persist_ball\Library\Bee\Android\Prj\Mono2x\Gradle@@:unityLibrary::release"
-      jars="C:\unity\Persist_ball\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\.transforms\81cf1aeea3b0595044b5188087038071\transformed\out\jars\classes.jar;C:\unity\Persist_ball\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\.transforms\81cf1aeea3b0595044b5188087038071\transformed\out\jars\libs\unity-classes.jar"
+      name="C:\Users\simd3\Documents\GitHub\Persist_ball\Library\Bee\Android\Prj\Mono2x\Gradle@@:unityLibrary::release"
+      jars="C:\Users\simd3\Documents\GitHub\Persist_ball\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\.transforms\fe3dd2f344289872cdf344c11c8ad8ed\transformed\out\jars\classes.jar;C:\Users\simd3\Documents\GitHub\Persist_ball\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\.transforms\fe3dd2f344289872cdf344c11c8ad8ed\transformed\out\jars\libs\unity-classes.jar"
       resolved="Gradle:unityLibrary:unspecified"
-      folder="C:\unity\Persist_ball\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\.transforms\81cf1aeea3b0595044b5188087038071\transformed\out"
+      folder="C:\Users\simd3\Documents\GitHub\Persist_ball\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\.transforms\fe3dd2f344289872cdf344c11c8ad8ed\transformed\out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -13,7 +13,7 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="__local_aars__:C:\unity\Persist_ball\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\libs\unity-classes.jar:unspecified@jar"
-      jars="C:\unity\Persist_ball\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\libs\unity-classes.jar"
-      resolved="__local_aars__:C:\unity\Persist_ball\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\libs\unity-classes.jar:unspecified"/>
+      name="__local_aars__:C:\Users\simd3\Documents\GitHub\Persist_ball\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\libs\unity-classes.jar:unspecified@jar"
+      jars="C:\Users\simd3\Documents\GitHub\Persist_ball\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\libs\unity-classes.jar"
+      resolved="__local_aars__:C:\Users\simd3\Documents\GitHub\Persist_ball\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\libs\unity-classes.jar:unspecified"/>
 </libraries>
