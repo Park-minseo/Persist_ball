@@ -310,6 +310,7 @@
 "Assets/Scripts/ballcontroller.cs"
 "Assets/Scripts/gotomainroom.cs"
 "Assets/Scripts/moving.cs"
+"Assets/Scripts/moving2.cs"
 "Assets/Scripts/slider_event.cs"
 "Assets/Scripts/startclick.cs"
 -langversion:9.0

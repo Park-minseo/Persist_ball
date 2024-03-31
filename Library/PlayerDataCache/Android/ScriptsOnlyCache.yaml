@@ -3,6 +3,7 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - ballcontroller
     - moving
+    - moving2
     - startclick
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
@@ -111,9 +112,11 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 18004}
+      Script: {instanceID: 18032}
     - Class: 114
-      Script: {instanceID: 22886}
+      Script: {instanceID: 19380}
+    - Class: 114
+      Script: {instanceID: 24236}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 135
@@ -156,31 +159,33 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 16654}
+      Script: {instanceID: 16680}
     - Class: 114
-      Script: {instanceID: 17230}
+      Script: {instanceID: 17256}
     - Class: 114
-      Script: {instanceID: 17648}
+      Script: {instanceID: 17604}
     - Class: 114
-      Script: {instanceID: 17850}
+      Script: {instanceID: 17676}
     - Class: 114
-      Script: {instanceID: 18004}
+      Script: {instanceID: 17878}
     - Class: 114
-      Script: {instanceID: 18140}
+      Script: {instanceID: 18032}
     - Class: 114
-      Script: {instanceID: 19116}
+      Script: {instanceID: 18168}
     - Class: 114
-      Script: {instanceID: 19364}
+      Script: {instanceID: 19146}
     - Class: 114
-      Script: {instanceID: 20052}
+      Script: {instanceID: 19380}
     - Class: 114
-      Script: {instanceID: 20594}
+      Script: {instanceID: 19396}
     - Class: 114
-      Script: {instanceID: 21058}
+      Script: {instanceID: 20084}
     - Class: 114
-      Script: {instanceID: 22886}
+      Script: {instanceID: 20626}
     - Class: 114
-      Script: {instanceID: 23380}
+      Script: {instanceID: 21090}
+    - Class: 114
+      Script: {instanceID: 24236}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -231,29 +236,29 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 16654}
+      Script: {instanceID: 16680}
     - Class: 114
-      Script: {instanceID: 17648}
+      Script: {instanceID: 17604}
     - Class: 114
-      Script: {instanceID: 17850}
+      Script: {instanceID: 17676}
     - Class: 114
-      Script: {instanceID: 18004}
+      Script: {instanceID: 17878}
     - Class: 114
-      Script: {instanceID: 18140}
+      Script: {instanceID: 18032}
     - Class: 114
-      Script: {instanceID: 19982}
+      Script: {instanceID: 18168}
     - Class: 114
-      Script: {instanceID: 20052}
+      Script: {instanceID: 19380}
     - Class: 114
-      Script: {instanceID: 20594}
+      Script: {instanceID: 20014}
     - Class: 114
-      Script: {instanceID: 20744}
+      Script: {instanceID: 20084}
     - Class: 114
-      Script: {instanceID: 21058}
+      Script: {instanceID: 20626}
     - Class: 114
-      Script: {instanceID: 22886}
+      Script: {instanceID: 20776}
     - Class: 114
-      Script: {instanceID: 23380}
+      Script: {instanceID: 21090}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -375,6 +380,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnBecameVisibleMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: fdfe96a50820502565930a0c59061789
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: startclick
   - hash:
       serializedVersion: 2
       Hash: e987953190eb4c12cf19df790566dc2c
@@ -519,6 +530,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnTransformParentChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 95f81389e8d17e466c3a9f4b56dba21b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: slider_event
   - hash:
       serializedVersion: 2
       Hash: d41ab9b5ea92474f9c0a6937a0607ce1
@@ -669,6 +686,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
     className: TMP_SubMeshUI
+  - hash:
+      serializedVersion: 2
+      Hash: 1ac666db0ba35e1088a99f422d700ce9
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: ballcontroller
   - hash:
       serializedVersion: 2
       Hash: 9078325c2a6f6a2d9612ade897511860
@@ -1049,6 +1072,12 @@ ScriptsOnlyBuild:
     className: Variables
   - hash:
       serializedVersion: 2
+      Hash: fbe05c12b60c88d40e80ca2d1f7bfad9
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: gotomainroom
+  - hash:
+      serializedVersion: 2
       Hash: b30c8635462e66ac20f4241106119f77
     assemblyName: Unity.VisualScripting.State
     namespaceName: Unity.VisualScripting
@@ -1103,28 +1132,10 @@ ScriptsOnlyBuild:
     className: UnityOnSliderValueChangedMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 1ac666db0ba35e1088a99f422d700ce9
+      Hash: 3b82345e6160b0ed35c510228345524e
     assemblyName: Assembly-CSharp
     namespaceName: 
-    className: ballcontroller
-  - hash:
-      serializedVersion: 2
-      Hash: fdfe96a50820502565930a0c59061789
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: startclick
-  - hash:
-      serializedVersion: 2
-      Hash: fbe05c12b60c88d40e80ca2d1f7bfad9
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: gotomainroom
-  - hash:
-      serializedVersion: 2
-      Hash: afa8f79ee0f64a105871ea7b1b22cef1
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: slider_event
+    className: moving2
   platform: 13
   scenePathNames:
   - Assets/Scenes/Main_room.unity

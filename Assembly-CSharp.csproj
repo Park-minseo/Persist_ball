@@ -64,6 +64,7 @@
     <Compile Include="Assets\Scripts\slider_event.cs" />
     <Compile Include="Assets\Scripts\startclick.cs" />
     <Compile Include="Assets\Scripts\ballcontroller.cs" />
+    <Compile Include="Assets\Scripts\moving2.cs" />
     <Compile Include="Assets\Scripts\gotomainroom.cs" />
   </ItemGroup>
   <ItemGroup>
