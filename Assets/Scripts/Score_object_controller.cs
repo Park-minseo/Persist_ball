@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class Score_object_controller : MonoBehaviour
 {
-    BoxCollider rangeCollider;
+    BoxCollider range2Collider;
     public GameObject bulletPrefab; // 프리팹화된 탄환
     public GameObject spawnPoint; // 생성 지점
-    private int poolSize = 10; // 풀 크기
+    private int poolSize = 7; // 풀 크기
     private float coolDown = 6.5f, coolDownCounter, DestroyCounter, DestroyCool = 15f; // 생성 쿨타임
     private List<GameObject> pools = new List<GameObject>(); // 풀
     void Start()
     {
+        range2Collider = spawnPoint.GetComponent<BoxCollider>();
         for (int i = 0; i < poolSize; i++)
         {
             GameObject bullet = Instantiate(bulletPrefab);
@@ -29,6 +30,17 @@ public class Score_object_controller : MonoBehaviour
         coolDownCounter -= Time.deltaTime;
         DestroyCounter -= Time.deltaTime; // DestroyCounter 감소
 
+        float x = range2Collider.transform.eulerAngles.x;
+        float y = range2Collider.transform.eulerAngles.y;
+        float z = range2Collider.transform.eulerAngles.z;
+        
+        for(int i = 0; i < poolSize; i++)
+        {
+            if (pools[i].activeInHierarchy)
+            {
+                pools[i].transform.position = new Vector3(pools[i].transform.position.x, range2Collider.transform.position.y + 0.35f, pools[i].transform.position.z);
+                pools[i].transform.rotation = Quaternion.Euler(new Vector3(-90 + x, y, z)); }
+        }
         if (coolDownCounter < 0)
         {
             for (int i = 0; i < poolSize; i++)
@@ -36,7 +48,7 @@ public class Score_object_controller : MonoBehaviour
                 if (!pools[i].activeInHierarchy)
                 {
                     pools[i].transform.position = Return_RandomPosition();
-                    pools[i].transform.rotation = Quaternion.Euler(new Vector3(-90, 0, 0));
+                    pools[i].transform.rotation = Quaternion.Euler(new Vector3(-90, y, z));
                     pools[i].SetActive(true); // 보석 생성
                     break;
                 }
@@ -56,10 +68,6 @@ public class Score_object_controller : MonoBehaviour
             }
             DestroyCounter = DestroyCool;
         }
-    }
-    private void Awake()
-    {
-        rangeCollider = spawnPoint.GetComponent<BoxCollider>();
     }
     Vector3 Return_RandomPosition()
     {

@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class moving : MonoBehaviour
 {
     public Slider aimSlider;
+    public float rotationSpeed = 300f;
     public float aim = 2.4f;
     // Start is called before the first frame update
     void Start()
@@ -26,6 +27,20 @@ public class moving : MonoBehaviour
         transform.Rotate(Input.gyro.rotationRateUnbiased.x * aim, 0, Input.gyro.rotationRateUnbiased.y * -1 * aim);
         aim = aimSlider.value;
 
+        float rotationX = 0f;
+        float rotationZ = 0f;
+
+        if (Input.GetKey(KeyCode.W))
+            rotationX += rotationSpeed * Time.deltaTime;
+        if (Input.GetKey(KeyCode.S))
+            rotationX -= rotationSpeed * Time.deltaTime;
+        if (Input.GetKey(KeyCode.A))
+            rotationZ += rotationSpeed * Time.deltaTime;
+        if (Input.GetKey(KeyCode.D))
+            rotationZ -= rotationSpeed * Time.deltaTime;
+
+        // 오브젝트를 회전합니다.
+        transform.Rotate(rotationX, 0f, rotationZ);
     }
     public void SaveAim()
     {

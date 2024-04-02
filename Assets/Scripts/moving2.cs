@@ -5,7 +5,7 @@ using UnityEngine;
 public class moving2 : MonoBehaviour
 {
     // Start is called before the first frame update
-
+    public float rotationSpeed = 300f;
     public float aim;
     void Start()
     {
@@ -23,5 +23,7 @@ public class moving2 : MonoBehaviour
     void Update()
     {
         transform.Rotate(Input.gyro.rotationRateUnbiased.x * aim, 0, Input.gyro.rotationRateUnbiased.y * -1 * aim);
+
+    
     }
 }
