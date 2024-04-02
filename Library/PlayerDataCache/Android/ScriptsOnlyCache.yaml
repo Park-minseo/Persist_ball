@@ -1,6 +1,8 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - AnimationScript
+    - Score_object_controller
     - ballcontroller
     - moving
     - moving2
@@ -116,10 +118,16 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 19380}
     - Class: 114
-      Script: {instanceID: 24236}
+      Script: {instanceID: 21456}
+    - Class: 114
+      Script: {instanceID: 23566}
+    - Class: 114
+      Script: {instanceID: 26048}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 135
+      Script: {instanceID: 0}
+    - Class: 136
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -185,7 +193,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 21090}
     - Class: 114
-      Script: {instanceID: 24236}
+      Script: {instanceID: 21456}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -934,6 +942,12 @@ ScriptsOnlyBuild:
     className: Outline
   - hash:
       serializedVersion: 2
+      Hash: 3b82345e6160b0ed35c510228345524e
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: moving2
+  - hash:
+      serializedVersion: 2
       Hash: 17142b03663387290480c82303274c02
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -1132,10 +1146,22 @@ ScriptsOnlyBuild:
     className: UnityOnSliderValueChangedMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 3b82345e6160b0ed35c510228345524e
+      Hash: 3e7abb1725bf040f27fc21d9918f601e
     assemblyName: Assembly-CSharp
     namespaceName: 
-    className: moving2
+    className: Score_object
+  - hash:
+      serializedVersion: 2
+      Hash: 2899c65c6ae32f4618e36d115bfbb938
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: AnimationScript
+  - hash:
+      serializedVersion: 2
+      Hash: b902fe20e126844485cf91773b8ff127
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Score_object_controller
   platform: 13
   scenePathNames:
   - Assets/Scenes/Main_room.unity

@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\simd3\\Documents\\GitHub\\Persist_ball\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F767D81D-1C48-F65D-39EB-B22014997EB4}|Assembly-CSharp.csproj|c:\\users\\simd3\\documents\\github\\persist_ball\\assets\\scripts\\score_object_controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F767D81D-1C48-F65D-39EB-B22014997EB4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\score_object_controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F767D81D-1C48-F65D-39EB-B22014997EB4}|Assembly-CSharp.csproj|c:\\users\\simd3\\documents\\github\\persist_ball\\assets\\scripts\\moving.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F767D81D-1C48-F65D-39EB-B22014997EB4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\moving.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -41,6 +45,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Score_object_controller.cs",
+              "DocumentMoniker": "C:\\Users\\simd3\\Documents\\GitHub\\Persist_ball\\Assets\\Scripts\\Score_object_controller.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Score_object_controller.cs",
+              "ToolTip": "C:\\Users\\simd3\\Documents\\GitHub\\Persist_ball\\Assets\\Scripts\\Score_object_controller.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Score_object_controller.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAAwBwAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-02T11:13:56.838Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "moving.cs",
               "DocumentMoniker": "C:\\Users\\simd3\\Documents\\GitHub\\Persist_ball\\Assets\\Scripts\\moving.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\moving.cs",
@@ -53,7 +70,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "slider_event.cs",
               "DocumentMoniker": "C:\\Users\\simd3\\Documents\\GitHub\\Persist_ball\\Assets\\Scripts\\slider_event.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\slider_event.cs",
@@ -65,7 +82,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "startclick.cs",
               "DocumentMoniker": "C:\\Users\\simd3\\Documents\\GitHub\\Persist_ball\\Assets\\Scripts\\startclick.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\startclick.cs",
@@ -77,7 +94,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ballcontroller.cs",
               "DocumentMoniker": "C:\\Users\\simd3\\Documents\\GitHub\\Persist_ball\\Assets\\Scripts\\ballcontroller.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ballcontroller.cs",
@@ -89,7 +106,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "README.txt",
               "DocumentMoniker": "C:\\Users\\simd3\\Documents\\GitHub\\Persist_ball\\Assets\\Game Buffs\\350 Realistic Nature Textures Megapack\\README.txt",
               "RelativeDocumentMoniker": "Assets\\Game Buffs\\350 Realistic Nature Textures Megapack\\README.txt",
@@ -101,7 +118,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "moving.cs",
               "DocumentMoniker": "C:\\unity\\Persist_ball\\Assets\\moving.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\unity\\Persist_ball\\Assets\\moving.cs",
@@ -113,7 +130,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "ballcontroller.cs",
               "DocumentMoniker": "C:\\unity\\Persist_ball\\Assets\\ballcontroller.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\unity\\Persist_ball\\Assets\\ballcontroller.cs",
