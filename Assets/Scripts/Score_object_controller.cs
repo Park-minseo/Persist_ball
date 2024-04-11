@@ -4,77 +4,63 @@ using UnityEngine;
 
 public class Score_object_controller : MonoBehaviour
 {
-    BoxCollider range2Collider;
-    public GameObject bulletPrefab; // 프리팹화된 탄환
+    private float coolDown = 6.5f, coolDownCounter, DestroyCounter, DestroyCool = 15f; // 생성 쿨타임
+    public GameObject scorePrefab; // 프리팹화된 보석
     public GameObject spawnPoint; // 생성 지점
     private int poolSize = 7; // 풀 크기
-    private float coolDown = 6.5f, coolDownCounter, DestroyCounter, DestroyCool = 15f; // 생성 쿨타임
-    private List<GameObject> pools = new List<GameObject>(); // 풀
+    private Queue<GameObject> pools = new Queue<GameObject>(); // 풀
+
     void Start()
     {
-        range2Collider = spawnPoint.GetComponent<BoxCollider>();
+        coolDownCounter = coolDown;
+        DestroyCounter = DestroyCool;
+
+        // 풀에 오브젝트를 미리 생성해둡니다.
         for (int i = 0; i < poolSize; i++)
         {
-            GameObject bullet = Instantiate(bulletPrefab);
-            bullet.gameObject.SetActive(false);
-            pools.Add(bullet);
-        } // 풀 초기화
-
-        coolDownCounter = coolDown;
-        DestroyCounter = DestroyCool; // DestroyCounter 초기화
+            GameObject obj = Instantiate(scorePrefab, Return_RandomPosition(), Quaternion.Euler(-90f, -90f, 30f));
+            obj.transform.parent = spawnPoint.transform; // spawnPoint를 부모로 설정
+            obj.SetActive(false); // 생성 후 비활성화
+            pools.Enqueue(obj);
+        }
     }
 
-    // Update is called once per frame
     void Update()
     {
         coolDownCounter -= Time.deltaTime;
-        DestroyCounter -= Time.deltaTime; // DestroyCounter 감소
+        DestroyCounter -= Time.deltaTime;
 
-        float x = range2Collider.transform.eulerAngles.x;
-        float y = range2Collider.transform.eulerAngles.y;
-        float z = range2Collider.transform.eulerAngles.z;
-        
-        for(int i = 0; i < poolSize; i++)
-        {
-            if (pools[i].activeInHierarchy)
-            {
-                pools[i].transform.position = new Vector3(pools[i].transform.position.x, range2Collider.transform.position.y + 0.35f, pools[i].transform.position.z);
-                pools[i].transform.rotation = Quaternion.Euler(new Vector3(-90 + x, y, z)); }
-        }
         if (coolDownCounter < 0)
         {
-            for (int i = 0; i < poolSize; i++)
+            // 풀에서 오브젝트를 가져와서 활성화합니다.
+            if (pools.Count > 0)
             {
-                if (!pools[i].activeInHierarchy)
-                {
-                    pools[i].transform.position = Return_RandomPosition();
-                    pools[i].transform.rotation = Quaternion.Euler(new Vector3(-90, y, z));
-                    pools[i].SetActive(true); // 보석 생성
-                    break;
-                }
+                GameObject obj = pools.Dequeue();
+                obj.SetActive(true);
+                obj.transform.position = Return_RandomPosition();
+                pools.Enqueue(obj);
+                coolDownCounter = coolDown;
             }
-            coolDownCounter = coolDown;
         }
 
-        if (DestroyCounter < 0) // 수정: DestoryCounter를 DestroyCounter로 변경
+        if (DestroyCounter < 0)
         {
-            for (int i = 0; i < poolSize; i++) // 수정: i = poolSize - 1을 제거하여 전체 풀을 확인
+            // 풀에서 오브젝트를 가져와서 비활성화합니다.
+            if (pools.Count > 0)
             {
-                if (pools[i].activeInHierarchy) // 수정: activeInHierarchy가 true인지 확인하여 보석이 활성화되어 있는지 확인
-                {
-                    pools[i].SetActive(false); // 보석 파괴
-                    break;
-                }
+                GameObject obj = pools.Dequeue();
+                obj.SetActive(false);
+                pools.Enqueue(obj);
+                DestroyCounter = DestroyCool;
             }
-            DestroyCounter = DestroyCool;
         }
     }
+
     Vector3 Return_RandomPosition()
     {
-        Vector3 originPosition = spawnPoint.transform.position;
+        Vector3 ori = spawnPoint.transform.position;
         float range_X = Random.Range(-1 * 1.8f, 2.2f);
         float range_Z = Random.Range(-2.2f, 2.3f);
-        Vector3 RandomPosition = new Vector3(range_X, 0.6f, range_Z);
-        return RandomPosition;
+        return new Vector3(range_X, ori.y + 0.5f, range_Z);
     }
 }

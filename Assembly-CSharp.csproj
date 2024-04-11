@@ -66,8 +66,6 @@
     <Compile Include="Assets\Scripts\Score_object_controller.cs" />
     <Compile Include="Assets\AurynSky\Gems Ultimate Pack\Scripts\AnimationScript.cs" />
     <Compile Include="Assets\Scripts\moving2.cs" />
-    <Compile Include="Assets\Scripts\Score_object.cs" />
-    <Compile Include="Assets\Scripts\gotomainroom.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

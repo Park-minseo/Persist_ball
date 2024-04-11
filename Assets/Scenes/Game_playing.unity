@@ -280,7 +280,6 @@ GameObject:
   - component: {fileID: 940080477}
   - component: {fileID: 940080479}
   - component: {fileID: 940080478}
-  - component: {fileID: 940080480}
   m_Layer: 0
   m_Name: Score_spawn
   m_TagString: Untagged
@@ -315,8 +314,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68084a914e0e33c4d944f7fe6246bfb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 8845300608048289118, guid: da645a3cf6693db45b606d8b9bf0efb0, type: 3}
-  spawnPoint: {fileID: 940080476}
+  scorePrefab: {fileID: 8845300608048289118, guid: da645a3cf6693db45b606d8b9bf0efb0, type: 3}
+  spawnPoint: {fileID: 1590566822}
 --- !u!65 &940080479
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -338,20 +337,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &940080480
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 940080476}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d77543729afd8c40ae9663873960b4e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 8845300608048289118, guid: da645a3cf6693db45b606d8b9bf0efb0, type: 3}
-  spawnPoint: {fileID: 1590566822}
 --- !u!1 &1101126342
 GameObject:
   m_ObjectHideFlags: 0

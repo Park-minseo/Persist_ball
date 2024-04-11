@@ -2,7 +2,6 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - AnimationScript
-    - Score_object
     - Score_object_controller
     - ballcontroller
     - moving
@@ -115,22 +114,18 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 18030}
+      Script: {instanceID: 17474}
     - Class: 114
-      Script: {instanceID: 19376}
+      Script: {instanceID: 18036}
     - Class: 114
-      Script: {instanceID: 23006}
+      Script: {instanceID: 18798}
     - Class: 114
-      Script: {instanceID: 23018}
+      Script: {instanceID: 19386}
     - Class: 114
-      Script: {instanceID: 23026}
-    - Class: 114
-      Script: {instanceID: 23030}
+      Script: {instanceID: 21462}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 135
-      Script: {instanceID: 0}
-    - Class: 136
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -174,29 +169,29 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 17256}
     - Class: 114
-      Script: {instanceID: 17674}
+      Script: {instanceID: 17606}
     - Class: 114
-      Script: {instanceID: 17876}
+      Script: {instanceID: 17678}
     - Class: 114
-      Script: {instanceID: 18030}
+      Script: {instanceID: 17882}
     - Class: 114
-      Script: {instanceID: 18166}
+      Script: {instanceID: 18036}
     - Class: 114
-      Script: {instanceID: 19142}
+      Script: {instanceID: 18172}
     - Class: 114
-      Script: {instanceID: 19376}
+      Script: {instanceID: 19152}
     - Class: 114
-      Script: {instanceID: 19392}
+      Script: {instanceID: 19386}
     - Class: 114
-      Script: {instanceID: 20080}
+      Script: {instanceID: 19402}
     - Class: 114
-      Script: {instanceID: 20622}
+      Script: {instanceID: 20090}
     - Class: 114
-      Script: {instanceID: 21086}
+      Script: {instanceID: 20632}
     - Class: 114
-      Script: {instanceID: 23006}
+      Script: {instanceID: 21096}
     - Class: 114
-      Script: {instanceID: 23022}
+      Script: {instanceID: 21462}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -249,27 +244,27 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 16680}
     - Class: 114
-      Script: {instanceID: 17674}
+      Script: {instanceID: 17606}
     - Class: 114
-      Script: {instanceID: 17876}
+      Script: {instanceID: 17678}
     - Class: 114
-      Script: {instanceID: 18030}
+      Script: {instanceID: 17882}
     - Class: 114
-      Script: {instanceID: 18166}
+      Script: {instanceID: 18036}
     - Class: 114
-      Script: {instanceID: 19376}
+      Script: {instanceID: 18172}
     - Class: 114
-      Script: {instanceID: 20010}
+      Script: {instanceID: 19386}
     - Class: 114
-      Script: {instanceID: 20080}
+      Script: {instanceID: 20020}
     - Class: 114
-      Script: {instanceID: 20622}
+      Script: {instanceID: 20090}
     - Class: 114
-      Script: {instanceID: 20772}
+      Script: {instanceID: 20632}
     - Class: 114
-      Script: {instanceID: 21086}
+      Script: {instanceID: 20782}
     - Class: 114
-      Script: {instanceID: 23022}
+      Script: {instanceID: 21096}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -387,10 +382,22 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
+      Hash: 2899c65c6ae32f4618e36d115bfbb938
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: AnimationScript
+  - hash:
+      serializedVersion: 2
       Hash: 1321993db8249e1e05e1e0492b2bbdc3
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnBecameVisibleMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: fdfe96a50820502565930a0c59061789
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: startclick
   - hash:
       serializedVersion: 2
       Hash: e987953190eb4c12cf19df790566dc2c
@@ -483,7 +490,7 @@ ScriptsOnlyBuild:
     className: TestResultRendererCallback
   - hash:
       serializedVersion: 2
-      Hash: 5e9fb62b82d729a9341e312ba165aa22
+      Hash: 9711c130d84b7b74c928595bf12fdd22
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: moving
@@ -535,6 +542,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnTransformParentChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 95f81389e8d17e466c3a9f4b56dba21b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: slider_event
   - hash:
       serializedVersion: 2
       Hash: d41ab9b5ea92474f9c0a6937a0607ce1
@@ -601,6 +614,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Flow
     namespaceName: Unity.VisualScripting
     className: ScriptGraphAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 9e3f793cd7533a7d2d8d2516a245dbf7
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Score_object_controller
   - hash:
       serializedVersion: 2
       Hash: fb79e95da8891fc7ac6c36ca6967af23
@@ -933,6 +952,12 @@ ScriptsOnlyBuild:
     className: Outline
   - hash:
       serializedVersion: 2
+      Hash: 3d973b4cf17a4aed2685a8c26d580967
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: moving2
+  - hash:
+      serializedVersion: 2
       Hash: 17142b03663387290480c82303274c02
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -1123,48 +1148,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 3b82345e6160b0ed35c510228345524e
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: moving2
-  - hash:
-      serializedVersion: 2
-      Hash: fbe05c12b60c88d40e80ca2d1f7bfad9
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: gotomainroom
-  - hash:
-      serializedVersion: 2
-      Hash: 95f81389e8d17e466c3a9f4b56dba21b
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: slider_event
-  - hash:
-      serializedVersion: 2
-      Hash: b902fe20e126844485cf91773b8ff127
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: Score_object_controller
-  - hash:
-      serializedVersion: 2
-      Hash: fdfe96a50820502565930a0c59061789
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: startclick
-  - hash:
-      serializedVersion: 2
-      Hash: 63e1ccc0f20c725ac6085e6b55af0c73
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: Score_object
-  - hash:
-      serializedVersion: 2
-      Hash: 2899c65c6ae32f4618e36d115bfbb938
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: AnimationScript
   platform: 13
   scenePathNames:
   - Assets/Scenes/Main_room.unity
