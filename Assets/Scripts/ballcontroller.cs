@@ -38,4 +38,13 @@ public class ballcontroller : MonoBehaviour
         }
         
     }
+
+    private void OnCollisionEnter(Collision coll)
+    {
+        if (coll.collider.gameObject.CompareTag("score")){
+            this.transform.localScale += new Vector3(0.02f, 0.02f, 0.02f);
+            Destroy(coll.collider.gameObject);
+
+        }
+    }
 }

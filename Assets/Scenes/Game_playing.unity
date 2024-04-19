@@ -316,6 +316,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scorePrefab: {fileID: 8845300608048289118, guid: da645a3cf6693db45b606d8b9bf0efb0, type: 3}
   spawnPoint: {fileID: 1590566822}
+  ball: {fileID: 206841538}
 --- !u!65 &940080479
 BoxCollider:
   m_ObjectHideFlags: 0

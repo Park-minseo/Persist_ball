@@ -6,7 +6,8 @@ public class Score_object_controller : MonoBehaviour
 {
     private float coolDown = 6.5f, coolDownCounter, DestroyCounter, DestroyCool = 15f; // 생성 쿨타임
     public GameObject scorePrefab; // 프리팹화된 보석
-    public GameObject spawnPoint; // 생성 지점
+    public GameObject spawnPoint; // 생성 
+    public GameObject ball;
     private int poolSize = 7; // 풀 크기
     private Queue<GameObject> pools = new Queue<GameObject>(); // 풀
 
@@ -54,6 +55,8 @@ public class Score_object_controller : MonoBehaviour
                 DestroyCounter = DestroyCool;
             }
         }
+
+
     }
 
     Vector3 Return_RandomPosition()
@@ -61,6 +64,6 @@ public class Score_object_controller : MonoBehaviour
         Vector3 ori = spawnPoint.transform.position;
         float range_X = Random.Range(-1 * 1.8f, 2.2f);
         float range_Z = Random.Range(-2.2f, 2.3f);
-        return new Vector3(range_X, ori.y + 0.5f, range_Z);
+        return new Vector3(range_X, ori.y + 0.2f, range_Z);
     }
 }
