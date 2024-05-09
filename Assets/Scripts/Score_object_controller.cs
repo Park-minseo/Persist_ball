@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Score_object_controller : MonoBehaviour
@@ -8,7 +9,7 @@ public class Score_object_controller : MonoBehaviour
     public GameObject scorePrefab; // 프리팹화된 보석
     public GameObject spawnPoint; // 생성 
     public GameObject ball;
-    private int poolSize = 7; // 풀 크기
+  
     private Queue<GameObject> pools = new Queue<GameObject>(); // 풀
 
     void Start()
@@ -16,14 +17,7 @@ public class Score_object_controller : MonoBehaviour
         coolDownCounter = coolDown;
         DestroyCounter = DestroyCool;
 
-        // 풀에 오브젝트를 미리 생성해둡니다.
-        for (int i = 0; i < poolSize; i++)
-        {
-            GameObject obj = Instantiate(scorePrefab, Return_RandomPosition(), Quaternion.Euler(-90f, -90f, 30f));
-            obj.transform.parent = spawnPoint.transform; // spawnPoint를 부모로 설정
-            obj.SetActive(false); // 생성 후 비활성화
-            pools.Enqueue(obj);
-        }
+
     }
 
     void Update()
@@ -34,26 +28,32 @@ public class Score_object_controller : MonoBehaviour
         if (coolDownCounter < 0)
         {
             // 풀에서 오브젝트를 가져와서 활성화합니다.
-            if (pools.Count > 0)
+
+            if (pools.Count <= 8)
             {
-                GameObject obj = pools.Dequeue();
+                GameObject obj = Instantiate(scorePrefab, Return_RandomPosition(), Quaternion.Euler(-90f, -90f, -30f)); ;
+
+
+                transform.rotation = Quaternion.Euler(-90f, -90f, -30f);
+
                 obj.SetActive(true);
-                obj.transform.position = Return_RandomPosition();
                 pools.Enqueue(obj);
                 coolDownCounter = coolDown;
             }
+            else coolDownCounter = coolDown;
         }
 
         if (DestroyCounter < 0)
         {
             // 풀에서 오브젝트를 가져와서 비활성화합니다.
-            if (pools.Count > 0)
+            if (pools.Count >= 0)
             {
-                GameObject obj = pools.Dequeue();
-                obj.SetActive(false);
-                pools.Enqueue(obj);
+                GameObject obj = pools.Peek();
+
+                Destroy(obj);
                 DestroyCounter = DestroyCool;
             }
+            else DestroyCounter = DestroyCool;
         }
 
 
@@ -64,6 +64,6 @@ public class Score_object_controller : MonoBehaviour
         Vector3 ori = spawnPoint.transform.position;
         float range_X = Random.Range(-1 * 1.8f, 2.2f);
         float range_Z = Random.Range(-2.2f, 2.3f);
-        return new Vector3(range_X, ori.y + 0.2f, range_Z);
+        return new Vector3(range_X, ori.y + 0.5f, range_Z);
     }
 }

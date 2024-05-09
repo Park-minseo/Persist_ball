@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6602983080715575450}
   - component: {fileID: -6151060113655365335}
   - component: {fileID: -3133689582169286242}
+  - component: {fileID: 852906463664473346}
   m_Layer: 0
   m_Name: Score_Object
   m_TagString: score
@@ -135,7 +136,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!135 &-3133689582169286242
 SphereCollider:
@@ -158,3 +159,17 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 1.1983314
   m_Center: {x: -0.022504518, y: 0.12031922, z: -0.1948204}
+--- !u!114 &852906463664473346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8845300608048289118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c89cd6d8fe53170478a32ba300bc8a63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 469912863963579483, guid: 32df44f6e5635e54da3771ac62be7087, type: 3}
+  me: {fileID: 8845300608048289118}

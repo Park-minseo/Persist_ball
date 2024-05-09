@@ -1,25 +1,33 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\simd3\\Documents\\GitHub\\Persist_ball\\",
+  "WorkspaceRootPath": "C:\\Users\\simd3\\Documents\\Unity\\Persist_ball\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F767D81D-1C48-F65D-39EB-B22014997EB4}|Assembly-CSharp.csproj|c:\\users\\simd3\\documents\\github\\persist_ball\\assets\\scripts\\score_object_controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F767D81D-1C48-F65D-39EB-B22014997EB4}|Assembly-CSharp.csproj|c:\\users\\simd3\\documents\\unity\\persist_ball\\assets\\clone_update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F767D81D-1C48-F65D-39EB-B22014997EB4}|Assembly-CSharp.csproj|solutionrelative:assets\\clone_update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F767D81D-1C48-F65D-39EB-B22014997EB4}|Assembly-CSharp.csproj|C:\\Users\\simd3\\Documents\\Unity\\Persist_ball\\assets\\scripts\\score_object_controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F767D81D-1C48-F65D-39EB-B22014997EB4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\score_object_controller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F767D81D-1C48-F65D-39EB-B22014997EB4}|Assembly-CSharp.csproj|c:\\users\\simd3\\documents\\github\\persist_ball\\assets\\scripts\\moving.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\simd3\\Documents\\Unity\\Persist_ball\\Assets\\Scripts\\clone_update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\clone_update.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F767D81D-1C48-F65D-39EB-B22014997EB4}|Assembly-CSharp.csproj|C:\\Users\\simd3\\Documents\\Unity\\Persist_ball\\assets\\scripts\\moving.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F767D81D-1C48-F65D-39EB-B22014997EB4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\moving.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F767D81D-1C48-F65D-39EB-B22014997EB4}|Assembly-CSharp.csproj|C:\\Users\\simd3\\Documents\\GitHub\\Persist_ball\\assets\\scripts\\ballcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F767D81D-1C48-F65D-39EB-B22014997EB4}|Assembly-CSharp.csproj|C:\\Users\\simd3\\Documents\\Unity\\Persist_ball\\assets\\scripts\\ballcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F767D81D-1C48-F65D-39EB-B22014997EB4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ballcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F767D81D-1C48-F65D-39EB-B22014997EB4}|Assembly-CSharp.csproj|C:\\Users\\simd3\\Documents\\GitHub\\Persist_ball\\assets\\scripts\\slider_event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F767D81D-1C48-F65D-39EB-B22014997EB4}|Assembly-CSharp.csproj|C:\\Users\\simd3\\Documents\\Unity\\Persist_ball\\assets\\scripts\\slider_event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F767D81D-1C48-F65D-39EB-B22014997EB4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\slider_event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F767D81D-1C48-F65D-39EB-B22014997EB4}|Assembly-CSharp.csproj|C:\\Users\\simd3\\Documents\\GitHub\\Persist_ball\\assets\\scripts\\startclick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F767D81D-1C48-F65D-39EB-B22014997EB4}|Assembly-CSharp.csproj|C:\\Users\\simd3\\Documents\\Unity\\Persist_ball\\assets\\scripts\\startclick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F767D81D-1C48-F65D-39EB-B22014997EB4}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\startclick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -29,7 +37,7 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\unity\\Persist_ball\\Assets\\ballcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F767D81D-1C48-F65D-39EB-B22014997EB4}|Assembly-CSharp.csproj|C:\\Users\\simd3\\Documents\\GitHub\\Persist_ball\\Assets\\Game Buffs\\350 Realistic Nature Textures Megapack\\README.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{F767D81D-1C48-F65D-39EB-B22014997EB4}|Assembly-CSharp.csproj|C:\\Users\\simd3\\Documents\\Unity\\Persist_ball\\Assets\\Game Buffs\\350 Realistic Nature Textures Megapack\\README.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{F767D81D-1C48-F65D-39EB-B22014997EB4}|Assembly-CSharp.csproj|solutionrelative:Assets\\Game Buffs\\350 Realistic Nature Textures Megapack\\README.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
@@ -45,36 +53,59 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "clone_update.cs",
+              "DocumentMoniker": "C:\\Users\\simd3\\Documents\\Unity\\Persist_ball\\Assets\\clone_update.cs",
+              "RelativeDocumentMoniker": "Assets\\clone_update.cs",
+              "ToolTip": "C:\\Users\\simd3\\Documents\\Unity\\Persist_ball\\Assets\\clone_update.cs",
+              "RelativeToolTip": "Assets\\clone_update.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T10:26:05.225Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "clone_update.cs",
+              "DocumentMoniker": "C:\\Users\\simd3\\Documents\\Unity\\Persist_ball\\Assets\\Scripts\\clone_update.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\clone_update.cs",
+              "ToolTip": "C:\\Users\\simd3\\Documents\\Unity\\Persist_ball\\Assets\\Scripts\\clone_update.cs",
+              "RelativeToolTip": "Assets\\Scripts\\clone_update.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T10:03:00.562Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Score_object_controller.cs",
-              "DocumentMoniker": "C:\\Users\\simd3\\Documents\\GitHub\\Persist_ball\\Assets\\Scripts\\Score_object_controller.cs",
+              "DocumentMoniker": "C:\\Users\\simd3\\Documents\\Unity\\Persist_ball\\Assets\\Scripts\\Score_object_controller.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Score_object_controller.cs",
-              "ToolTip": "C:\\Users\\simd3\\Documents\\GitHub\\Persist_ball\\Assets\\Scripts\\Score_object_controller.cs",
+              "ToolTip": "C:\\Users\\simd3\\Documents\\Unity\\Persist_ball\\Assets\\Scripts\\Score_object_controller.cs",
               "RelativeToolTip": "Assets\\Scripts\\Score_object_controller.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAAwBwAAAAqAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEIAAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-02T11:13:56.838Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "moving.cs",
-              "DocumentMoniker": "C:\\Users\\simd3\\Documents\\GitHub\\Persist_ball\\Assets\\Scripts\\moving.cs",
+              "DocumentMoniker": "C:\\Users\\simd3\\Documents\\Unity\\Persist_ball\\Assets\\Scripts\\moving.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\moving.cs",
-              "ToolTip": "C:\\Users\\simd3\\Documents\\GitHub\\Persist_ball\\Assets\\Scripts\\moving.cs",
+              "ToolTip": "C:\\Users\\simd3\\Documents\\Unity\\Persist_ball\\Assets\\Scripts\\moving.cs",
               "RelativeToolTip": "Assets\\Scripts\\moving.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-26T06:37:50.908Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-26T06:37:50.908Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "slider_event.cs",
-              "DocumentMoniker": "C:\\Users\\simd3\\Documents\\GitHub\\Persist_ball\\Assets\\Scripts\\slider_event.cs",
+              "DocumentMoniker": "C:\\Users\\simd3\\Documents\\Unity\\Persist_ball\\Assets\\Scripts\\slider_event.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\slider_event.cs",
-              "ToolTip": "C:\\Users\\simd3\\Documents\\GitHub\\Persist_ball\\Assets\\Scripts\\slider_event.cs",
+              "ToolTip": "C:\\Users\\simd3\\Documents\\Unity\\Persist_ball\\Assets\\Scripts\\slider_event.cs",
               "RelativeToolTip": "Assets\\Scripts\\slider_event.cs",
               "ViewState": "AQIAABMAAAAAAAAAAAAqwBcAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -82,11 +113,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "startclick.cs",
-              "DocumentMoniker": "C:\\Users\\simd3\\Documents\\GitHub\\Persist_ball\\Assets\\Scripts\\startclick.cs",
+              "DocumentMoniker": "C:\\Users\\simd3\\Documents\\Unity\\Persist_ball\\Assets\\Scripts\\startclick.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\startclick.cs",
-              "ToolTip": "C:\\Users\\simd3\\Documents\\GitHub\\Persist_ball\\Assets\\Scripts\\startclick.cs",
+              "ToolTip": "C:\\Users\\simd3\\Documents\\Unity\\Persist_ball\\Assets\\Scripts\\startclick.cs",
               "RelativeToolTip": "Assets\\Scripts\\startclick.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAADwvwgAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -94,11 +125,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "ballcontroller.cs",
-              "DocumentMoniker": "C:\\Users\\simd3\\Documents\\GitHub\\Persist_ball\\Assets\\Scripts\\ballcontroller.cs",
+              "DocumentMoniker": "C:\\Users\\simd3\\Documents\\Unity\\Persist_ball\\Assets\\Scripts\\ballcontroller.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ballcontroller.cs",
-              "ToolTip": "C:\\Users\\simd3\\Documents\\GitHub\\Persist_ball\\Assets\\Scripts\\ballcontroller.cs",
+              "ToolTip": "C:\\Users\\simd3\\Documents\\Unity\\Persist_ball\\Assets\\Scripts\\ballcontroller.cs",
               "RelativeToolTip": "Assets\\Scripts\\ballcontroller.cs",
               "ViewState": "AQIAABUAAAAAAAAAAAAIwCMAAABrAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -106,11 +137,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "README.txt",
-              "DocumentMoniker": "C:\\Users\\simd3\\Documents\\GitHub\\Persist_ball\\Assets\\Game Buffs\\350 Realistic Nature Textures Megapack\\README.txt",
+              "DocumentMoniker": "C:\\Users\\simd3\\Documents\\Unity\\Persist_ball\\Assets\\Game Buffs\\350 Realistic Nature Textures Megapack\\README.txt",
               "RelativeDocumentMoniker": "Assets\\Game Buffs\\350 Realistic Nature Textures Megapack\\README.txt",
-              "ToolTip": "C:\\Users\\simd3\\Documents\\GitHub\\Persist_ball\\Assets\\Game Buffs\\350 Realistic Nature Textures Megapack\\README.txt",
+              "ToolTip": "C:\\Users\\simd3\\Documents\\Unity\\Persist_ball\\Assets\\Game Buffs\\350 Realistic Nature Textures Megapack\\README.txt",
               "RelativeToolTip": "Assets\\Game Buffs\\350 Realistic Nature Textures Megapack\\README.txt",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
@@ -118,7 +149,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "moving.cs",
               "DocumentMoniker": "C:\\unity\\Persist_ball\\Assets\\moving.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\unity\\Persist_ball\\Assets\\moving.cs",
@@ -130,7 +161,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "ballcontroller.cs",
               "DocumentMoniker": "C:\\unity\\Persist_ball\\Assets\\ballcontroller.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\unity\\Persist_ball\\Assets\\ballcontroller.cs",
