@@ -7,6 +7,6 @@ public class clone_update : MonoBehaviour
     void Update()
     {
             me.transform.position = new Vector3(me.transform.position.x, target.transform.position.y + 0.5f, me.transform.position.z);
-        me.transform.rotation = Quaternion.Euler(-90f, -90f, -30f); 
+            me.transform.rotation = Quaternion.Euler(-90f, -90f, -30f); 
     }
 }

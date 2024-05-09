@@ -4,6 +4,7 @@ ScriptsOnlyBuild:
     - AnimationScript
     - Score_object_controller
     - ballcontroller
+    - clone_update
     - moving
     - moving2
     - startclick
@@ -114,22 +115,48 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 16680}
+    - Class: 114
       Script: {instanceID: 17474}
     - Class: 114
-      Script: {instanceID: 18034}
+      Script: {instanceID: 17606}
     - Class: 114
-      Script: {instanceID: 18796}
+      Script: {instanceID: 17680}
     - Class: 114
-      Script: {instanceID: 19384}
+      Script: {instanceID: 17882}
     - Class: 114
-      Script: {instanceID: 21460}
+      Script: {instanceID: 18036}
+    - Class: 114
+      Script: {instanceID: 18798}
+    - Class: 114
+      Script: {instanceID: 19386}
+    - Class: 114
+      Script: {instanceID: 20090}
+    - Class: 114
+      Script: {instanceID: 20632}
+    - Class: 114
+      Script: {instanceID: 20782}
+    - Class: 114
+      Script: {instanceID: 21096}
+    - Class: 114
+      Script: {instanceID: 21462}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 135
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
     Assets/Scenes/Main_room.unity:
     - Class: 1
@@ -169,29 +196,29 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 17256}
     - Class: 114
-      Script: {instanceID: 17606}
+      Script: {instanceID: 17608}
     - Class: 114
-      Script: {instanceID: 17678}
+      Script: {instanceID: 17680}
     - Class: 114
-      Script: {instanceID: 17880}
+      Script: {instanceID: 17882}
     - Class: 114
-      Script: {instanceID: 18034}
+      Script: {instanceID: 18036}
     - Class: 114
-      Script: {instanceID: 18170}
+      Script: {instanceID: 18172}
     - Class: 114
-      Script: {instanceID: 19150}
+      Script: {instanceID: 19152}
     - Class: 114
-      Script: {instanceID: 19384}
+      Script: {instanceID: 19386}
     - Class: 114
-      Script: {instanceID: 19400}
+      Script: {instanceID: 19402}
     - Class: 114
-      Script: {instanceID: 20088}
+      Script: {instanceID: 20090}
     - Class: 114
-      Script: {instanceID: 20630}
+      Script: {instanceID: 20632}
     - Class: 114
-      Script: {instanceID: 21094}
+      Script: {instanceID: 21096}
     - Class: 114
-      Script: {instanceID: 21460}
+      Script: {instanceID: 21462}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -244,27 +271,27 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 16680}
     - Class: 114
-      Script: {instanceID: 17606}
+      Script: {instanceID: 17608}
     - Class: 114
-      Script: {instanceID: 17678}
+      Script: {instanceID: 17680}
     - Class: 114
-      Script: {instanceID: 17880}
+      Script: {instanceID: 17882}
     - Class: 114
-      Script: {instanceID: 18034}
+      Script: {instanceID: 18036}
     - Class: 114
-      Script: {instanceID: 18170}
+      Script: {instanceID: 18172}
     - Class: 114
-      Script: {instanceID: 19384}
+      Script: {instanceID: 19386}
     - Class: 114
-      Script: {instanceID: 20018}
+      Script: {instanceID: 20020}
     - Class: 114
-      Script: {instanceID: 20088}
+      Script: {instanceID: 20090}
     - Class: 114
-      Script: {instanceID: 20630}
+      Script: {instanceID: 20632}
     - Class: 114
-      Script: {instanceID: 20780}
+      Script: {instanceID: 20782}
     - Class: 114
-      Script: {instanceID: 21094}
+      Script: {instanceID: 21096}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -392,6 +419,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnBecameVisibleMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 994e947ca6e5573bc5ff663e50972e2d
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: clone_update
   - hash:
       serializedVersion: 2
       Hash: fdfe96a50820502565930a0c59061789
@@ -706,7 +739,7 @@ ScriptsOnlyBuild:
     className: TMP_SubMeshUI
   - hash:
       serializedVersion: 2
-      Hash: 1ac666db0ba35e1088a99f422d700ce9
+      Hash: 192d3ad1456218207798a858ffe3565e
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: ballcontroller
@@ -1153,4 +1186,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Main_room.unity
   - Assets/Scenes/Game_playing.unity
   - Assets/Scenes/Setting_room.unity
-  playerPath: "C:/Users/simd3/OneDrive/\uBB38\uC11C/134.apk"
+  playerPath: C:/Users/simd3/Downloads/2024_05_10_5.apk

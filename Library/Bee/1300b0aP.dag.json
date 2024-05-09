@@ -153,8 +153,8 @@
       "DisplayName": "Writing UnityEngine.TestRunner.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
       "PayloadOffset": 107,
-      "PayloadLength": 43,
-      "PayloadDebugContentSnippet": "C:\\Users\\simd3\\Documents\\Unity",
+      "PayloadLength": 21,
+      "PayloadDebugContentSnippet": "C:\\unity\\Persist_ball",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1300b0aP.dag/UnityEngine.TestRunner.UnityAdditionalFile.txt"
@@ -165,8 +165,8 @@
       "Annotation": "WriteText Library/Bee/artifacts/1300b0aP.dag/UnityEngine.TestRunner.rsp",
       "DisplayName": "Writing UnityEngine.TestRunner.rsp",
       "ActionType": "WriteFile",
-      "PayloadOffset": 243,
-      "PayloadLength": 44374,
+      "PayloadOffset": 221,
+      "PayloadLength": 44403,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
       "Outputs": [
@@ -178,9 +178,9 @@
       "Annotation": "WriteText Library/Bee/artifacts/1300b0aP.dag/UnityEngine.TestRunner.rsp2",
       "DisplayName": "Writing UnityEngine.TestRunner.rsp2",
       "ActionType": "WriteFile",
-      "PayloadOffset": 44711,
-      "PayloadLength": 56,
-      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\simd3\\Docum",
+      "PayloadOffset": 44718,
+      "PayloadLength": 34,
+      "PayloadDebugContentSnippet": "/pathmap:\"C:\\unity\\Persist_bal",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1300b0aP.dag/UnityEngine.TestRunner.rsp2"
@@ -1585,7 +1585,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1300b0aP.dag/UnityEngine.TestRunner.dll.mvfrm.rsp",
       "DisplayName": "Writing UnityEngine.TestRunner.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
-      "PayloadOffset": 44870,
+      "PayloadOffset": 44855,
       "PayloadLength": 5523,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -1744,9 +1744,9 @@
       "Annotation": "WriteText Library/Bee/artifacts/1300b0aP.dag/UnityEngine.UI.UnityAdditionalFile.txt",
       "DisplayName": "Writing UnityEngine.UI.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
-      "PayloadOffset": 50498,
-      "PayloadLength": 43,
-      "PayloadDebugContentSnippet": "C:\\Users\\simd3\\Documents\\Unity",
+      "PayloadOffset": 50483,
+      "PayloadLength": 21,
+      "PayloadDebugContentSnippet": "C:\\unity\\Persist_ball",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1300b0aP.dag/UnityEngine.UI.UnityAdditionalFile.txt"
@@ -1757,8 +1757,8 @@
       "Annotation": "WriteText Library/Bee/artifacts/1300b0aP.dag/UnityEngine.UI.rsp",
       "DisplayName": "Writing UnityEngine.UI.rsp",
       "ActionType": "WriteFile",
-      "PayloadOffset": 50626,
-      "PayloadLength": 37919,
+      "PayloadOffset": 50589,
+      "PayloadLength": 37948,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
       "Outputs": [
@@ -1770,9 +1770,9 @@
       "Annotation": "WriteText Library/Bee/artifacts/1300b0aP.dag/UnityEngine.UI.rsp2",
       "DisplayName": "Writing UnityEngine.UI.rsp2",
       "ActionType": "WriteFile",
-      "PayloadOffset": 88631,
-      "PayloadLength": 56,
-      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\simd3\\Docum",
+      "PayloadOffset": 88623,
+      "PayloadLength": 34,
+      "PayloadDebugContentSnippet": "/pathmap:\"C:\\unity\\Persist_bal",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1300b0aP.dag/UnityEngine.UI.rsp2"
@@ -2107,7 +2107,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1300b0aP.dag/UnityEngine.UI.dll.mvfrm.rsp",
       "DisplayName": "Writing UnityEngine.UI.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
-      "PayloadOffset": 88782,
+      "PayloadOffset": 88752,
       "PayloadLength": 5617,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -2268,9 +2268,9 @@
       "Annotation": "WriteText Library/Bee/artifacts/1300b0aP.dag/Unity.TextMeshPro.UnityAdditionalFile.txt",
       "DisplayName": "Writing Unity.TextMeshPro.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
-      "PayloadOffset": 94507,
-      "PayloadLength": 43,
-      "PayloadDebugContentSnippet": "C:\\Users\\simd3\\Documents\\Unity",
+      "PayloadOffset": 94477,
+      "PayloadLength": 21,
+      "PayloadDebugContentSnippet": "C:\\unity\\Persist_ball",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1300b0aP.dag/Unity.TextMeshPro.UnityAdditionalFile.txt"
@@ -2281,8 +2281,8 @@
       "Annotation": "WriteText Library/Bee/artifacts/1300b0aP.dag/Unity.TextMeshPro.rsp",
       "DisplayName": "Writing Unity.TextMeshPro.rsp",
       "ActionType": "WriteFile",
-      "PayloadOffset": 94638,
-      "PayloadLength": 35943,
+      "PayloadOffset": 94586,
+      "PayloadLength": 35972,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
       "Outputs": [
@@ -2294,9 +2294,9 @@
       "Annotation": "WriteText Library/Bee/artifacts/1300b0aP.dag/Unity.TextMeshPro.rsp2",
       "DisplayName": "Writing Unity.TextMeshPro.rsp2",
       "ActionType": "WriteFile",
-      "PayloadOffset": 130670,
-      "PayloadLength": 56,
-      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\simd3\\Docum",
+      "PayloadOffset": 130647,
+      "PayloadLength": 34,
+      "PayloadDebugContentSnippet": "/pathmap:\"C:\\unity\\Persist_bal",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1300b0aP.dag/Unity.TextMeshPro.rsp2"
@@ -2610,7 +2610,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1300b0aP.dag/Unity.TextMeshPro.dll.mvfrm.rsp",
       "DisplayName": "Writing Unity.TextMeshPro.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
-      "PayloadOffset": 130824,
+      "PayloadOffset": 130779,
       "PayloadLength": 5693,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -2773,9 +2773,9 @@
       "Annotation": "WriteText Library/Bee/artifacts/1300b0aP.dag/Unity.Timeline.UnityAdditionalFile.txt",
       "DisplayName": "Writing Unity.Timeline.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
-      "PayloadOffset": 136622,
-      "PayloadLength": 43,
-      "PayloadDebugContentSnippet": "C:\\Users\\simd3\\Documents\\Unity",
+      "PayloadOffset": 136577,
+      "PayloadLength": 21,
+      "PayloadDebugContentSnippet": "C:\\unity\\Persist_ball",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1300b0aP.dag/Unity.Timeline.UnityAdditionalFile.txt"
@@ -2786,8 +2786,8 @@
       "Annotation": "WriteText Library/Bee/artifacts/1300b0aP.dag/Unity.Timeline.rsp",
       "DisplayName": "Writing Unity.Timeline.rsp",
       "ActionType": "WriteFile",
-      "PayloadOffset": 136750,
-      "PayloadLength": 37027,
+      "PayloadOffset": 136683,
+      "PayloadLength": 37056,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
       "Outputs": [
@@ -2799,9 +2799,9 @@
       "Annotation": "WriteText Library/Bee/artifacts/1300b0aP.dag/Unity.Timeline.rsp2",
       "DisplayName": "Writing Unity.Timeline.rsp2",
       "ActionType": "WriteFile",
-      "PayloadOffset": 173863,
-      "PayloadLength": 56,
-      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\simd3\\Docum",
+      "PayloadOffset": 173825,
+      "PayloadLength": 34,
+      "PayloadDebugContentSnippet": "/pathmap:\"C:\\unity\\Persist_bal",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1300b0aP.dag/Unity.Timeline.rsp2"
@@ -3111,7 +3111,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1300b0aP.dag/Unity.Timeline.dll.mvfrm.rsp",
       "DisplayName": "Writing Unity.Timeline.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
-      "PayloadOffset": 174014,
+      "PayloadOffset": 173954,
       "PayloadLength": 5693,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -3274,9 +3274,9 @@
       "Annotation": "WriteText Library/Bee/artifacts/1300b0aP.dag/Unity.VisualScripting.Core.UnityAdditionalFile.txt",
       "DisplayName": "Writing Unity.VisualScripting.Core.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
-      "PayloadOffset": 179824,
-      "PayloadLength": 43,
-      "PayloadDebugContentSnippet": "C:\\Users\\simd3\\Documents\\Unity",
+      "PayloadOffset": 179764,
+      "PayloadLength": 21,
+      "PayloadDebugContentSnippet": "C:\\unity\\Persist_ball",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1300b0aP.dag/Unity.VisualScripting.Core.UnityAdditionalFile.txt"
@@ -3287,8 +3287,8 @@
       "Annotation": "WriteText Library/Bee/artifacts/1300b0aP.dag/Unity.VisualScripting.Core.rsp",
       "DisplayName": "Writing Unity.VisualScripting.Core.rsp",
       "ActionType": "WriteFile",
-      "PayloadOffset": 179964,
-      "PayloadLength": 84749,
+      "PayloadOffset": 179882,
+      "PayloadLength": 84778,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
       "Outputs": [
@@ -3300,9 +3300,9 @@
       "Annotation": "WriteText Library/Bee/artifacts/1300b0aP.dag/Unity.VisualScripting.Core.rsp2",
       "DisplayName": "Writing Unity.VisualScripting.Core.rsp2",
       "ActionType": "WriteFile",
-      "PayloadOffset": 264811,
-      "PayloadLength": 56,
-      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\simd3\\Docum",
+      "PayloadOffset": 264758,
+      "PayloadLength": 34,
+      "PayloadDebugContentSnippet": "/pathmap:\"C:\\unity\\Persist_bal",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1300b0aP.dag/Unity.VisualScripting.Core.rsp2"
@@ -3967,7 +3967,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1300b0aP.dag/Unity.VisualScripting.Core.dll.mvfrm.rsp",
       "DisplayName": "Writing Unity.VisualScripting.Core.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
-      "PayloadOffset": 264974,
+      "PayloadOffset": 264899,
       "PayloadLength": 5693,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -4130,9 +4130,9 @@
       "Annotation": "WriteText Library/Bee/artifacts/1300b0aP.dag/Unity.VisualScripting.Flow.UnityAdditionalFile.txt",
       "DisplayName": "Writing Unity.VisualScripting.Flow.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
-      "PayloadOffset": 270784,
-      "PayloadLength": 43,
-      "PayloadDebugContentSnippet": "C:\\Users\\simd3\\Documents\\Unity",
+      "PayloadOffset": 270709,
+      "PayloadLength": 21,
+      "PayloadDebugContentSnippet": "C:\\unity\\Persist_ball",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1300b0aP.dag/Unity.VisualScripting.Flow.UnityAdditionalFile.txt"
@@ -4143,8 +4143,8 @@
       "Annotation": "WriteText Library/Bee/artifacts/1300b0aP.dag/Unity.VisualScripting.Flow.rsp",
       "DisplayName": "Writing Unity.VisualScripting.Flow.rsp",
       "ActionType": "WriteFile",
-      "PayloadOffset": 270924,
-      "PayloadLength": 80159,
+      "PayloadOffset": 270827,
+      "PayloadLength": 80188,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
       "Outputs": [
@@ -4156,9 +4156,9 @@
       "Annotation": "WriteText Library/Bee/artifacts/1300b0aP.dag/Unity.VisualScripting.Flow.rsp2",
       "DisplayName": "Writing Unity.VisualScripting.Flow.rsp2",
       "ActionType": "WriteFile",
-      "PayloadOffset": 351181,
-      "PayloadLength": 56,
-      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\simd3\\Docum",
+      "PayloadOffset": 351113,
+      "PayloadLength": 34,
+      "PayloadDebugContentSnippet": "/pathmap:\"C:\\unity\\Persist_bal",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1300b0aP.dag/Unity.VisualScripting.Flow.rsp2"
@@ -4817,7 +4817,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1300b0aP.dag/Unity.VisualScripting.Flow.dll.mvfrm.rsp",
       "DisplayName": "Writing Unity.VisualScripting.Flow.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
-      "PayloadOffset": 351344,
+      "PayloadOffset": 351254,
       "PayloadLength": 5781,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -4982,9 +4982,9 @@
       "Annotation": "WriteText Library/Bee/artifacts/1300b0aP.dag/Unity.VisualScripting.State.UnityAdditionalFile.txt",
       "DisplayName": "Writing Unity.VisualScripting.State.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
-      "PayloadOffset": 357243,
-      "PayloadLength": 43,
-      "PayloadDebugContentSnippet": "C:\\Users\\simd3\\Documents\\Unity",
+      "PayloadOffset": 357153,
+      "PayloadLength": 21,
+      "PayloadDebugContentSnippet": "C:\\unity\\Persist_ball",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1300b0aP.dag/Unity.VisualScripting.State.UnityAdditionalFile.txt"
@@ -4995,8 +4995,8 @@
       "Annotation": "WriteText Library/Bee/artifacts/1300b0aP.dag/Unity.VisualScripting.State.rsp",
       "DisplayName": "Writing Unity.VisualScripting.State.rsp",
       "ActionType": "WriteFile",
-      "PayloadOffset": 357384,
-      "PayloadLength": 34163,
+      "PayloadOffset": 357272,
+      "PayloadLength": 34192,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
       "Outputs": [
@@ -5008,9 +5008,9 @@
       "Annotation": "WriteText Library/Bee/artifacts/1300b0aP.dag/Unity.VisualScripting.State.rsp2",
       "DisplayName": "Writing Unity.VisualScripting.State.rsp2",
       "ActionType": "WriteFile",
-      "PayloadOffset": 391646,
-      "PayloadLength": 56,
-      "PayloadDebugContentSnippet": "/pathmap:\"C:\\Users\\simd3\\Docum",
+      "PayloadOffset": 391563,
+      "PayloadLength": 34,
+      "PayloadDebugContentSnippet": "/pathmap:\"C:\\unity\\Persist_bal",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1300b0aP.dag/Unity.VisualScripting.State.rsp2"
@@ -5300,7 +5300,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1300b0aP.dag/Unity.VisualScripting.State.dll.mvfrm.rsp",
       "DisplayName": "Writing Unity.VisualScripting.State.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
-      "PayloadOffset": 391810,
+      "PayloadOffset": 391705,
       "PayloadLength": 5869,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -5467,9 +5467,9 @@
       "Annotation": "WriteText Library/Bee/artifacts/1300b0aP.dag/Assembly-CSharp.UnityAdditionalFile.txt",
       "DisplayName": "Writing Assembly-CSharp.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
-      "PayloadOffset": 397785,
-      "PayloadLength": 43,
-      "PayloadDebugContentSnippet": "C:\\Users\\simd3\\Documents\\Unity",
+      "PayloadOffset": 397680,
+      "PayloadLength": 21,
+      "PayloadDebugContentSnippet": "C:\\unity\\Persist_ball",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/1300b0aP.dag/Assembly-CSharp.UnityAdditionalFile.txt"
@@ -5480,8 +5480,8 @@
       "Annotation": "WriteText Library/Bee/artifacts/1300b0aP.dag/Assembly-CSharp.rsp",
       "DisplayName": "Writing Assembly-CSharp.rsp",
       "ActionType": "WriteFile",
-      "PayloadOffset": 397914,
-      "PayloadLength": 31323,
+      "PayloadOffset": 397787,
+      "PayloadLength": 31378,
       "PayloadDebugContentSnippet": "-target:library\r\n-out:\"Library",
       "Inputs": [],
       "Outputs": [
@@ -5493,7 +5493,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1300b0aP.dag/Assembly-CSharp.rsp2",
       "DisplayName": "Writing Assembly-CSharp.rsp2",
       "ActionType": "WriteFile",
-      "PayloadOffset": 429324,
+      "PayloadOffset": 429252,
       "PayloadLength": 0,
       "PayloadDebugContentSnippet": "",
       "Inputs": [],
@@ -5701,6 +5701,7 @@
         "Library/Bee/artifacts/1300b0aP.dag/Unity.VisualScripting.State.ref.dll",
         "Library/Bee/artifacts/1300b0aP.dag/UnityEngine.UI.ref.dll",
         "Assets/AurynSky/Gems Ultimate Pack/Scripts/AnimationScript.cs",
+        "Assets/clone_update.cs",
         "Assets/Scripts/ballcontroller.cs",
         "Assets/Scripts/moving.cs",
         "Assets/Scripts/moving2.cs",
@@ -5802,7 +5803,7 @@
       "Annotation": "WriteText Library/Bee/artifacts/1300b0aP.dag/Assembly-CSharp.dll.mvfrm.rsp",
       "DisplayName": "Writing Assembly-CSharp.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
-      "PayloadOffset": 429420,
+      "PayloadOffset": 429348,
       "PayloadLength": 6113,
       "PayloadDebugContentSnippet": "Library\\Bee\\artifacts\\mvdfrm\\U",
       "Inputs": [],
@@ -6214,7 +6215,7 @@
     {
       "Annotation": "BuildPlayerDataGenerator Library/BuildPlayerData/Player/RuntimeInitializeOnLoads.json (+1 other)",
       "DisplayName": "BuildPlayerDataGenerator RuntimeInitializeOnLoads",
-      "Action": "\"C:/Program Files/Unity/Hub/Editor/2022.3.21f1/Editor/Data\\Tools\\netcorerun\\netcorerun.exe\" \"C:/Program Files/Unity/Hub/Editor/2022.3.21f1/Editor/Data/Tools/BuildPlayerDataGenerator/BuildPlayerDataGenerator.exe\" -a=\"C:\\Users\\simd3\\Documents\\Unity\\Persist_ball\\Library\\Bee\\PlayerScriptAssemblies\\Assembly-CSharp.dll\" -a=\"C:\\Users\\simd3\\Documents\\Unity\\Persist_ball\\Library\\Bee\\PlayerScriptAssemblies\\Unity.TextMeshPro.dll\" -a=\"C:\\Users\\simd3\\Documents\\Unity\\Persist_ball\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Timeline.dll\" -a=\"C:\\Users\\simd3\\Documents\\Unity\\Persist_ball\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Core.dll\" -a=\"C:\\Users\\simd3\\Documents\\Unity\\Persist_ball\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Flow.dll\" -a=\"C:\\Users\\simd3\\Documents\\Unity\\Persist_ball\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.State.dll\" -a=\"C:\\Users\\simd3\\Documents\\Unity\\Persist_ball\\Library\\Bee\\PlayerScriptAssemblies\\UnityEngine.TestRunner.dll\" -a=\"C:\\Users\\simd3\\Documents\\Unity\\Persist_ball\\Library\\Bee\\PlayerScriptAssemblies\\UnityEngine.UI.dll\" -a=\"C:\\Users\\simd3\\Documents\\Unity\\Persist_ball\\Library\\PackageCache\\com.unity.ext.nunit@1.0.6\\net35\\unity-custom\\nunit.framework.dll\" -a=\"C:\\Users\\simd3\\Documents\\Unity\\Persist_ball\\Library\\PackageCache\\com.unity.visualscripting@1.9.1\\Runtime\\VisualScripting.Flow\\Dependencies\\NCalc\\Unity.VisualScripting.Antlr3.Runtime.dll\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.21f1\\Editor\\Data\\Managed\\UnityEngine\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.21f1\\Editor\\Data\\NetStandard\\compat\\2.1.0\\shims\\netfx\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.21f1\\Editor\\Data\\NetStandard\\compat\\2.1.0\\shims\\netstandard\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.21f1\\Editor\\Data\\NetStandard\\Extensions\\2.0.0\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.21f1\\Editor\\Data\\NetStandard\\ref\\2.1.0\" -s=\"C:\\Users\\simd3\\Documents\\Unity\\Persist_ball\\Library\\Bee\\PlayerScriptAssemblies\" -s=\"C:\\Users\\simd3\\Documents\\Unity\\Persist_ball\\Library\\PackageCache\\com.unity.ext.nunit@1.0.6\\net35\\unity-custom\" -s=\"C:\\Users\\simd3\\Documents\\Unity\\Persist_ball\\Library\\PackageCache\\com.unity.visualscripting@1.9.1\\Runtime\\VisualScripting.Flow\\Dependencies\\NCalc\" -o=\"Library/BuildPlayerData/Player\" -rn=\"RuntimeInitializeOnLoads.json\" -tn=\"TypeDb-All.json\"",
+      "Action": "\"C:/Program Files/Unity/Hub/Editor/2022.3.21f1/Editor/Data\\Tools\\netcorerun\\netcorerun.exe\" \"C:/Program Files/Unity/Hub/Editor/2022.3.21f1/Editor/Data/Tools/BuildPlayerDataGenerator/BuildPlayerDataGenerator.exe\" -a=\"C:\\unity\\Persist_ball\\Library\\Bee\\PlayerScriptAssemblies\\Assembly-CSharp.dll\" -a=\"C:\\unity\\Persist_ball\\Library\\Bee\\PlayerScriptAssemblies\\Unity.TextMeshPro.dll\" -a=\"C:\\unity\\Persist_ball\\Library\\Bee\\PlayerScriptAssemblies\\Unity.Timeline.dll\" -a=\"C:\\unity\\Persist_ball\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Core.dll\" -a=\"C:\\unity\\Persist_ball\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.Flow.dll\" -a=\"C:\\unity\\Persist_ball\\Library\\Bee\\PlayerScriptAssemblies\\Unity.VisualScripting.State.dll\" -a=\"C:\\unity\\Persist_ball\\Library\\Bee\\PlayerScriptAssemblies\\UnityEngine.TestRunner.dll\" -a=\"C:\\unity\\Persist_ball\\Library\\Bee\\PlayerScriptAssemblies\\UnityEngine.UI.dll\" -a=\"C:\\unity\\Persist_ball\\Library\\PackageCache\\com.unity.ext.nunit@1.0.6\\net35\\unity-custom\\nunit.framework.dll\" -a=\"C:\\unity\\Persist_ball\\Library\\PackageCache\\com.unity.visualscripting@1.9.1\\Runtime\\VisualScripting.Flow\\Dependencies\\NCalc\\Unity.VisualScripting.Antlr3.Runtime.dll\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.21f1\\Editor\\Data\\Managed\\UnityEngine\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.21f1\\Editor\\Data\\NetStandard\\compat\\2.1.0\\shims\\netfx\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.21f1\\Editor\\Data\\NetStandard\\compat\\2.1.0\\shims\\netstandard\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.21f1\\Editor\\Data\\NetStandard\\Extensions\\2.0.0\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.21f1\\Editor\\Data\\NetStandard\\ref\\2.1.0\" -s=\"C:\\unity\\Persist_ball\\Library\\Bee\\PlayerScriptAssemblies\" -s=\"C:\\unity\\Persist_ball\\Library\\PackageCache\\com.unity.ext.nunit@1.0.6\\net35\\unity-custom\" -s=\"C:\\unity\\Persist_ball\\Library\\PackageCache\\com.unity.visualscripting@1.9.1\\Runtime\\VisualScripting.Flow\\Dependencies\\NCalc\" -o=\"Library/BuildPlayerData/Player\" -rn=\"RuntimeInitializeOnLoads.json\" -tn=\"TypeDb-All.json\"",
       "Inputs": [
         "C:/Program Files/Unity/Hub/Editor/2022.3.21f1/Editor/Data/Tools/netcorerun/netcorerun.exe",
         "C:/Program Files/Unity/Hub/Editor/2022.3.21f1/Editor/Data/Tools/BuildPlayerDataGenerator/BuildPlayerDataGenerator.exe",
@@ -6437,6 +6438,6 @@
   "SharedResources": [],
   "Scanners": [],
   "Identifier": "Library/Bee/1300b0aP.dag.json",
-  "PayloadsFile": "C:/Users/simd3/Documents/Unity/Persist_ball/Library/Bee/1300b0aP.dag.payloads",
+  "PayloadsFile": "C:/unity/Persist_ball/Library/Bee/1300b0aP.dag.payloads",
   "RelativePathToRoot": "../.."
 }
