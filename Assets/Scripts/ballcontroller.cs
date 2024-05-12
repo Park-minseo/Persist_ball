@@ -8,13 +8,20 @@ public class ballcontroller : MonoBehaviour
 {
     private Rigidbody rb;
     public GameObject ball;
+    public GameObject end_result;
+    public GameObject cube;
     private float idleTime = 0f;
     private bool isMoving = false;
     public TextMeshProUGUI score_text;
+
+    public TextMeshProUGUI end_score;
+    public TextMeshProUGUI end_best;
     public GameObject gameover;
     private int score = 0;
     bool isgameover = false;
-    private bool touchDetected = false;
+
+    // 최고 점수를 저장할 키
+    private string bestScoreKey = "BestScore";
 
     // Start is called before the first frame update
     void Start()
@@ -35,24 +42,20 @@ public class ballcontroller : MonoBehaviour
             ball.SetActive(false);
             isgameover = true;
             gameover.SetActive(true);
-        }
-
-        if (isgameover && !touchDetected && Input.touchCount > 0)
-        {
-            Touch touch = Input.GetTouch(0);
-            if (touch.phase == TouchPhase.Began)
+            end_result.SetActive(true);
+            end_score.text = "Your Score \n" + score;
+            int bestScore = PlayerPrefs.GetInt(bestScoreKey, 0);
+            if (score > bestScore)
             {
-                touchDetected = true;
-                ball.SetActive(true);
-                score = 0;
-                gameover.SetActive(false);
-                isgameover = false;
-                objectTransform.position = new Vector3(0, 2, 0);
-                rb.velocity = Vector3.zero;
-
-                // 터치가 인식되고 처리되었으므로 다시 초기화합니다.
-                touchDetected = false;
+                PlayerPrefs.SetInt(bestScoreKey, score);
+                PlayerPrefs.Save();
+                end_best.text = "Best Score \n" + score;
             }
+            else
+            {
+                end_best.text = "Best Score \n" + bestScore;
+            }
+
         }
 
         Vector3 currentVelocity = rb.velocity;
@@ -72,9 +75,27 @@ public class ballcontroller : MonoBehaviour
     {
         if (coll.collider.gameObject.CompareTag("score"))
         {
-            this.transform.localScale += new Vector3(0.02f, 0.02f, 0.02f);
+            this.transform.localScale += new Vector3(0.03f, 0.03f, 0.03f);
             Destroy(coll.collider.gameObject);
             score += 100;
         }
+    }
+
+
+    public void regame()
+    {
+        Transform objectTransform = GetComponent<Transform>();
+        ball.SetActive(true);
+        score = 0;
+        gameover.SetActive(false);
+        isgameover = false;
+        end_result.SetActive(false);
+        objectTransform.position = new Vector3(0, 2, 0);
+        rb.velocity = Vector3.zero;
+        //Debug.Log("test");
+        cube.transform.rotation = Quaternion.Euler(0, 0, 0);
+
+        Transform ballTransform = ball.transform;
+        ballTransform.localScale = new Vector3(0.3f, 0.3f, 0.3f);
     }
 }

@@ -59,7 +59,6 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.21f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\moving.cs" />
     <Compile Include="Assets\Scripts\slider_event.cs" />
     <Compile Include="Assets\Scripts\startclick.cs" />
     <Compile Include="Assets\Scripts\ballcontroller.cs" />
@@ -67,6 +66,7 @@
     <Compile Include="Assets\clone_update.cs" />
     <Compile Include="Assets\AurynSky\Gems Ultimate Pack\Scripts\AnimationScript.cs" />
     <Compile Include="Assets\Scripts\moving2.cs" />
+    <Compile Include="Assets\Scripts\Restart_event.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

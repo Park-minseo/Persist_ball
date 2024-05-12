@@ -5,10 +5,11 @@ using UnityEngine;
 
 public class Score_object_controller : MonoBehaviour
 {
-    private float coolDown = 6.5f, coolDownCounter, DestroyCounter, DestroyCool = 15f; // 생성 쿨타임
+    private float coolDown = 6.5f, coolDownCounter, DestroyCounter, DestroyCool = 8f; // 생성 쿨타임
     public GameObject scorePrefab; // 프리팹화된 보석
     public GameObject spawnPoint; // 생성 
     public GameObject ball;
+    private bool isempty = true;
   
     private Queue<GameObject> pools = new Queue<GameObject>(); // 풀
 
@@ -16,14 +17,14 @@ public class Score_object_controller : MonoBehaviour
     {
         coolDownCounter = coolDown;
         DestroyCounter = DestroyCool;
-
+        
 
     }
 
     void Update()
     {
         coolDownCounter -= Time.deltaTime;
-        DestroyCounter -= Time.deltaTime;
+        if(!isempty) DestroyCounter -= Time.deltaTime;
 
         if (coolDownCounter < 0)
         {
@@ -39,6 +40,7 @@ public class Score_object_controller : MonoBehaviour
                 obj.SetActive(true);
                 pools.Enqueue(obj);
                 coolDownCounter = coolDown;
+                isempty = false;
             }
             else coolDownCounter = coolDown;
         }
@@ -49,9 +51,13 @@ public class Score_object_controller : MonoBehaviour
             if (pools.Count >= 0)
             {
                 GameObject obj = pools.Peek();
-
+                Debug.Log("delete complete");
+                pools.Dequeue();
                 Destroy(obj);
                 DestroyCounter = DestroyCool;
+
+
+                if (pools.Count == 0) isempty = true;
             }
             else DestroyCounter = DestroyCool;
         }
@@ -65,5 +71,19 @@ public class Score_object_controller : MonoBehaviour
         float range_X = Random.Range(-1 * 1.8f, 2.2f);
         float range_Z = Random.Range(-2.2f, 2.3f);
         return new Vector3(range_X, ori.y + 0.5f, range_Z);
+    }
+
+    public void reset()
+    {
+
+        while(pools.Count > 0)
+        {
+            GameObject obj = pools.Peek();
+            Debug.Log("delete complete");
+            pools.Dequeue();
+            Destroy(obj);
+            DestroyCounter = DestroyCool;
+            isempty = true;
+        }
     }
 }
