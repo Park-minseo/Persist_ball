@@ -62,11 +62,13 @@
     <Compile Include="Assets\Scripts\slider_event.cs" />
     <Compile Include="Assets\Scripts\startclick.cs" />
     <Compile Include="Assets\Scripts\ballcontroller.cs" />
+    <Compile Include="Assets\Scripts\moving_setting.cs" />
     <Compile Include="Assets\Scripts\Score_object_controller.cs" />
     <Compile Include="Assets\clone_update.cs" />
     <Compile Include="Assets\AurynSky\Gems Ultimate Pack\Scripts\AnimationScript.cs" />
     <Compile Include="Assets\Scripts\moving2.cs" />
     <Compile Include="Assets\Scripts\Restart_event.cs" />
+    <Compile Include="Assets\Scripts\ballcontroller2.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

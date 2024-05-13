@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -39,21 +40,32 @@ public class ballcontroller : MonoBehaviour
 
         if (currentPosition.y < -5)
         {
-            ball.SetActive(false);
-            isgameover = true;
-            gameover.SetActive(true);
-            end_result.SetActive(true);
-            end_score.text = "Your Score \n" + score;
-            int bestScore = PlayerPrefs.GetInt(bestScoreKey, 0);
-            if (score > bestScore)
+            Scene scene = SceneManager.GetActiveScene();
+            if (scene.name == "Setting_room" || scene.name == "Main_room")
             {
-                PlayerPrefs.SetInt(bestScoreKey, score);
-                PlayerPrefs.Save();
-                end_best.text = "Best Score \n" + score;
+                objectTransform.position = new Vector3(0, 2, 0);
+                rb.velocity = Vector3.zero;
+
             }
             else
             {
-                end_best.text = "Best Score \n" + bestScore;
+                ball.SetActive(false);
+                isgameover = true;
+                gameover.SetActive(true);
+                end_result.SetActive(true);
+                end_score.text = "Your Score \n" + score;
+                int bestScore = PlayerPrefs.GetInt(bestScoreKey, 0);
+                if (score > bestScore)
+                {
+                    PlayerPrefs.SetInt(bestScoreKey, score);
+                    PlayerPrefs.Save();
+                    end_best.text = "Best Score \n" + score;
+                }
+                else
+                {
+                    end_best.text = "Best Score \n" + bestScore;
+                }
+
             }
 
         }
