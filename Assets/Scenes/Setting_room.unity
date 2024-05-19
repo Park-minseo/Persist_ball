@@ -710,8 +710,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\uAC10\uB3C4\uAC00 \uBCC0\uACBD\uB418\uC5C8\uC2B5\uB2C8\uB2E4."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 969bf046718d20c40b9fd29d82046acd, type: 2}
-  m_sharedMaterial: {fileID: 3510678953008759412, guid: 969bf046718d20c40b9fd29d82046acd, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0bb0c8e63cfab934dbf926270678f838, type: 2}
+  m_sharedMaterial: {fileID: 2737061394489690393, guid: 0bb0c8e63cfab934dbf926270678f838, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
