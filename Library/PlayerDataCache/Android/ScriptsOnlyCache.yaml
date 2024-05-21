@@ -43,6 +43,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
     - UnityEngine.UI.Mask
+    - UnityEngine.UI.Outline
     - UnityEngine.UI.ScrollRect
     - UnityEngine.UI.Scrollbar
     - UnityEngine.UI.Slider
@@ -175,7 +176,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 21466}
     - Class: 114
-      Script: {instanceID: 24504}
+      Script: {instanceID: 23970}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 135
@@ -259,6 +260,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 21098}
     - Class: 114
       Script: {instanceID: 21108}
+    - Class: 114
+      Script: {instanceID: 21424}
     - Class: 114
       Script: {instanceID: 21466}
     - Class: 114
@@ -1241,6 +1244,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 975b25f9561634e6e3e99ecd782fc1e2
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: achievement_script
   platform: 13
   scenePathNames:
   - Assets/Scenes/Main_room.unity
