@@ -95,6 +95,9 @@ ScriptsOnlyBuild:
     fullTypeName: startclick
     methodName: goto_achi
   - assembly: Assembly-CSharp
+    fullTypeName: startclick
+    methodName: goto_Main
+  - assembly: Assembly-CSharp
     fullTypeName: ballcontroller
     methodName: regame
   - assembly: Assembly-CSharp
@@ -148,11 +151,11 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 16680}
+      Script: {instanceID: 16616}
     - Class: 114
-      Script: {instanceID: 17474}
+      Script: {instanceID: 16682}
     - Class: 114
-      Script: {instanceID: 17606}
+      Script: {instanceID: 17476}
     - Class: 114
       Script: {instanceID: 17608}
     - Class: 114
@@ -164,19 +167,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 18796}
     - Class: 114
-      Script: {instanceID: 19386}
+      Script: {instanceID: 20086}
     - Class: 114
-      Script: {instanceID: 20092}
+      Script: {instanceID: 20628}
     - Class: 114
-      Script: {instanceID: 20634}
+      Script: {instanceID: 20778}
     - Class: 114
-      Script: {instanceID: 20784}
+      Script: {instanceID: 21092}
     - Class: 114
-      Script: {instanceID: 21098}
+      Script: {instanceID: 21458}
     - Class: 114
-      Script: {instanceID: 21466}
+      Script: {instanceID: 22928}
     - Class: 114
-      Script: {instanceID: 23970}
+      Script: {instanceID: 23250}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 135
@@ -227,9 +230,11 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 16680}
+      Script: {instanceID: 16616}
     - Class: 114
-      Script: {instanceID: 17256}
+      Script: {instanceID: 16682}
+    - Class: 114
+      Script: {instanceID: 17258}
     - Class: 114
       Script: {instanceID: 17608}
     - Class: 114
@@ -243,31 +248,29 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 18922}
     - Class: 114
-      Script: {instanceID: 19152}
+      Script: {instanceID: 19150}
     - Class: 114
-      Script: {instanceID: 19386}
+      Script: {instanceID: 19398}
     - Class: 114
-      Script: {instanceID: 19402}
+      Script: {instanceID: 20086}
     - Class: 114
-      Script: {instanceID: 20076}
+      Script: {instanceID: 20628}
     - Class: 114
-      Script: {instanceID: 20092}
+      Script: {instanceID: 20778}
     - Class: 114
-      Script: {instanceID: 20634}
+      Script: {instanceID: 21092}
     - Class: 114
-      Script: {instanceID: 20784}
+      Script: {instanceID: 21100}
     - Class: 114
-      Script: {instanceID: 21098}
+      Script: {instanceID: 21416}
     - Class: 114
-      Script: {instanceID: 21108}
+      Script: {instanceID: 21458}
     - Class: 114
-      Script: {instanceID: 21424}
+      Script: {instanceID: 21496}
     - Class: 114
-      Script: {instanceID: 21466}
+      Script: {instanceID: 22126}
     - Class: 114
-      Script: {instanceID: 21504}
-    - Class: 114
-      Script: {instanceID: 22134}
+      Script: {instanceID: 22936}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -320,7 +323,9 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 16680}
+      Script: {instanceID: 16616}
+    - Class: 114
+      Script: {instanceID: 16682}
     - Class: 114
       Script: {instanceID: 17608}
     - Class: 114
@@ -330,21 +335,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 18170}
     - Class: 114
-      Script: {instanceID: 19386}
+      Script: {instanceID: 20016}
     - Class: 114
-      Script: {instanceID: 20020}
+      Script: {instanceID: 20086}
     - Class: 114
-      Script: {instanceID: 20076}
+      Script: {instanceID: 20628}
     - Class: 114
-      Script: {instanceID: 20092}
+      Script: {instanceID: 20778}
     - Class: 114
-      Script: {instanceID: 20634}
+      Script: {instanceID: 21092}
     - Class: 114
-      Script: {instanceID: 20784}
+      Script: {instanceID: 22924}
     - Class: 114
-      Script: {instanceID: 21098}
-    - Class: 114
-      Script: {instanceID: 21106}
+      Script: {instanceID: 22936}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 135
@@ -362,6 +365,12 @@ ScriptsOnlyBuild:
     - Class: 224
       Script: {instanceID: 0}
   scriptHashData:
+  - hash:
+      serializedVersion: 2
+      Hash: fe63798da1bd08dc0eb6845b7dfd9170
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: ballcontroller
   - hash:
       serializedVersion: 2
       Hash: 55060a7bf226ac385ce19ebd450f199f
@@ -470,12 +479,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnBecameVisibleMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: 994e947ca6e5573bc5ff663e50972e2d
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: clone_update
   - hash:
       serializedVersion: 2
       Hash: e275ea5e964b0a5e4dc3c018785e37aa
@@ -718,12 +721,6 @@ ScriptsOnlyBuild:
     className: Mask
   - hash:
       serializedVersion: 2
-      Hash: 438fe586f2c8b0a85abbc1a9c1a0701c
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: Restart_event
-  - hash:
-      serializedVersion: 2
       Hash: 4718916586b3818eb69bf65df61f0f3a
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -788,12 +785,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
     className: TMP_SubMeshUI
-  - hash:
-      serializedVersion: 2
-      Hash: fe63798da1bd08dc0eb6845b7dfd9170
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: ballcontroller
   - hash:
       serializedVersion: 2
       Hash: 9078325c2a6f6a2d9612ade897511860
@@ -910,12 +901,6 @@ ScriptsOnlyBuild:
     className: UnityOnTriggerExitMessageListener
   - hash:
       serializedVersion: 2
-      Hash: d7272281256c46ad4311c72f00262caf
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: ballcontroller2
-  - hash:
-      serializedVersion: 2
       Hash: 17f82e3e7d8f8b07a270a4aad9bfe79d
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
@@ -998,12 +983,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.EventSystems
     className: StandaloneInputModule
-  - hash:
-      serializedVersion: 2
-      Hash: 9b9bba9c3aac42d5a376b577f5c47ce6
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: moving_setting
   - hash:
       serializedVersion: 2
       Hash: a90f6a00b23520788be7d89ee3b0773d
@@ -1246,10 +1225,40 @@ ScriptsOnlyBuild:
     className: UnityOnSliderValueChangedMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 438fe586f2c8b0a85abbc1a9c1a0701c
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: Restart_event
+  - hash:
+      serializedVersion: 2
+      Hash: 9b9bba9c3aac42d5a376b577f5c47ce6
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: moving_setting
+  - hash:
+      serializedVersion: 2
+      Hash: 994e947ca6e5573bc5ff663e50972e2d
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: clone_update
+  - hash:
+      serializedVersion: 2
       Hash: 975b25f9561634e6e3e99ecd782fc1e2
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: achievement_script
+  - hash:
+      serializedVersion: 2
+      Hash: d7272281256c46ad4311c72f00262caf
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: ballcontroller2
+  - hash:
+      serializedVersion: 2
+      Hash: 8fe1c47755ae62c1c5e059d3640d9a1d
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: achievement_manager
   platform: 13
   scenePathNames:
   - Assets/Scenes/Main_room.unity
