@@ -2,11 +2,13 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - AchievementManager
+    - AndroidToast
     - AnimationScript
     - Score_object_controller
     - ballcontroller
     - ballcontroller2
     - clone_update
+    - gold_manager
     - moving2
     - moving_setting
     - startclick
@@ -19,6 +21,7 @@ ScriptsOnlyBuild:
     - TMPro.TMP_StyleSheet
     Unity.TextMeshPro.dll:
     - TMPro.TMP_FontAsset
+    - TMPro.TMP_InputField
     - TMPro.TMP_Settings
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
@@ -37,14 +40,17 @@ ScriptsOnlyBuild:
     - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.EventSystems.EventTrigger
     - UnityEngine.EventSystems.StandaloneInputModule
     - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.ContentSizeFitter
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
+    - UnityEngine.UI.LayoutElement
     - UnityEngine.UI.Mask
     - UnityEngine.UI.Outline
+    - UnityEngine.UI.RectMask2D
     - UnityEngine.UI.ScrollRect
     - UnityEngine.UI.Scrollbar
     - UnityEngine.UI.Slider
@@ -60,6 +66,11 @@ ScriptsOnlyBuild:
     - TMPro.TMP_GlyphAdjustmentRecord
     - TMPro.TMP_GlyphPairAdjustmentRecord
     - TMPro.TMP_GlyphValueRecord
+    - TMPro.TMP_InputField/OnChangeEvent
+    - TMPro.TMP_InputField/SelectionEvent
+    - TMPro.TMP_InputField/SubmitEvent
+    - TMPro.TMP_InputField/TextSelectionEvent
+    - TMPro.TMP_InputField/TouchScreenKeyboardEvent
     - TMPro.TMP_Sprite
     - TMPro.TMP_SpriteCharacter
     - TMPro.TMP_SpriteGlyph
@@ -76,6 +87,8 @@ ScriptsOnlyBuild:
     - UnityEngine.TextCore.GlyphMetrics
     - UnityEngine.TextCore.GlyphRect
     UnityEngine.UI:
+    - UnityEngine.EventSystems.EventTrigger/Entry
+    - UnityEngine.EventSystems.EventTrigger/TriggerEvent
     - UnityEngine.UI.AnimationTriggers
     - UnityEngine.UI.Button/ButtonClickedEvent
     - UnityEngine.UI.ColorBlock
@@ -87,11 +100,68 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.SpriteState
   methodsToPreserve:
   - assembly: Assembly-CSharp
+    fullTypeName: AchievementManager
+    methodName: reward0
+  - assembly: Assembly-CSharp
+    fullTypeName: gold_manager
+    methodName: gold_update
+  - assembly: Assembly-CSharp
+    fullTypeName: AchievementManager
+    methodName: reward5
+  - assembly: Assembly-CSharp
+    fullTypeName: gold_manager
+    methodName: gold_update
+  - assembly: Assembly-CSharp
+    fullTypeName: AchievementManager
+    methodName: reward8
+  - assembly: Assembly-CSharp
+    fullTypeName: gold_manager
+    methodName: gold_update
+  - assembly: Assembly-CSharp
+    fullTypeName: AchievementManager
+    methodName: reward7
+  - assembly: Assembly-CSharp
+    fullTypeName: gold_manager
+    methodName: gold_update
+  - assembly: Assembly-CSharp
+    fullTypeName: AchievementManager
+    methodName: reward4
+  - assembly: Assembly-CSharp
+    fullTypeName: gold_manager
+    methodName: gold_update
+  - assembly: Assembly-CSharp
+    fullTypeName: AchievementManager
+    methodName: reward1
+  - assembly: Assembly-CSharp
+    fullTypeName: gold_manager
+    methodName: gold_update
+  - assembly: Assembly-CSharp
+    fullTypeName: AchievementManager
+    methodName: reward3
+  - assembly: Assembly-CSharp
+    fullTypeName: gold_manager
+    methodName: gold_update
+  - assembly: Assembly-CSharp
+    fullTypeName: AchievementManager
+    methodName: reward6
+  - assembly: Assembly-CSharp
+    fullTypeName: gold_manager
+    methodName: gold_update
+  - assembly: Assembly-CSharp
+    fullTypeName: AchievementManager
+    methodName: reward2
+  - assembly: Assembly-CSharp
+    fullTypeName: gold_manager
+    methodName: gold_update
+  - assembly: Assembly-CSharp
     fullTypeName: startclick
     methodName: goto_Setting
   - assembly: Assembly-CSharp
     fullTypeName: startclick
     methodName: goto_Game
+  - assembly: Assembly-CSharp
+    fullTypeName: startclick
+    methodName: goto_shop
   - assembly: Assembly-CSharp
     fullTypeName: startclick
     methodName: goto_achi
@@ -152,6 +222,8 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 16640}
+    - Class: 114
       Script: {instanceID: 16682}
     - Class: 114
       Script: {instanceID: 17476}
@@ -163,8 +235,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 17682}
     - Class: 114
       Script: {instanceID: 17884}
-    - Class: 114
-      Script: {instanceID: 18172}
     - Class: 114
       Script: {instanceID: 18798}
     - Class: 114
@@ -178,9 +248,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 21102}
     - Class: 114
-      Script: {instanceID: 21468}
+      Script: {instanceID: 21470}
     - Class: 114
-      Script: {instanceID: 23594}
+      Script: {instanceID: 23682}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 135
@@ -220,6 +290,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 54
       Script: {instanceID: 0}
+    - Class: 61
+      Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
     - Class: 81
@@ -243,9 +315,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 17884}
     - Class: 114
-      Script: {instanceID: 18172}
+      Script: {instanceID: 18338}
     - Class: 114
-      Script: {instanceID: 18340}
+      Script: {instanceID: 18510}
     - Class: 114
       Script: {instanceID: 18924}
     - Class: 114
@@ -269,11 +341,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 21112}
     - Class: 114
-      Script: {instanceID: 21468}
+      Script: {instanceID: 21428}
     - Class: 114
-      Script: {instanceID: 21506}
+      Script: {instanceID: 21470}
     - Class: 114
-      Script: {instanceID: 22136}
+      Script: {instanceID: 21508}
+    - Class: 114
+      Script: {instanceID: 21808}
+    - Class: 114
+      Script: {instanceID: 22138}
+    - Class: 114
+      Script: {instanceID: 22642}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -326,7 +404,11 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 16640}
+    - Class: 114
       Script: {instanceID: 16682}
+    - Class: 114
+      Script: {instanceID: 16804}
     - Class: 114
       Script: {instanceID: 17610}
     - Class: 114
@@ -334,9 +416,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 17884}
     - Class: 114
-      Script: {instanceID: 18172}
+      Script: {instanceID: 19140}
     - Class: 114
       Script: {instanceID: 19388}
+    - Class: 114
+      Script: {instanceID: 19916}
     - Class: 114
       Script: {instanceID: 20024}
     - Class: 114
@@ -370,10 +454,10 @@ ScriptsOnlyBuild:
   scriptHashData:
   - hash:
       serializedVersion: 2
-      Hash: 20a120e55ad3ab65556328d5fd8309dd
+      Hash: 915204dac8acad99f076d6e72ada0a0f
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
-    className: Outline
+    className: Button
   - hash:
       serializedVersion: 2
       Hash: 55060a7bf226ac385ce19ebd450f199f
@@ -598,12 +682,6 @@ ScriptsOnlyBuild:
     className: ToggleGroup
   - hash:
       serializedVersion: 2
-      Hash: 915204dac8acad99f076d6e72ada0a0f
-    assemblyName: UnityEngine.UI
-    namespaceName: UnityEngine.UI
-    className: Button
-  - hash:
-      serializedVersion: 2
       Hash: d90629714fa6b0145fcaffc87f5c6559
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -674,6 +752,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.EventSystems
     className: BaseInput
+  - hash:
+      serializedVersion: 2
+      Hash: 959c6096f2c74459103e131cf6013aa1
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: gold_manager
   - hash:
       serializedVersion: 2
       Hash: e6f8333cc8a800e2866870a5ef7efc35
@@ -892,7 +976,7 @@ ScriptsOnlyBuild:
     className: Toggle
   - hash:
       serializedVersion: 2
-      Hash: f8adafadadcc9bf4ae5b9e3c92dd141a
+      Hash: 9126ca44544776e332d1547734332726
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: AchievementManager
@@ -1018,7 +1102,7 @@ ScriptsOnlyBuild:
     className: StandaloneInputModule
   - hash:
       serializedVersion: 2
-      Hash: 9b9bba9c3aac42d5a376b577f5c47ce6
+      Hash: 75d0e7d09d0f2ce4eac0d2689d52b8ec
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: moving_setting
@@ -1058,6 +1142,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnDragMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 20a120e55ad3ab65556328d5fd8309dd
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.UI
+    className: Outline
   - hash:
       serializedVersion: 2
       Hash: 3d973b4cf17a4aed2685a8c26d580967
@@ -1220,6 +1310,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro
     namespaceName: TMPro
     className: TMP_ScrollbarEventHandler
+  - hash:
+      serializedVersion: 2
+      Hash: bcf7c8d994dc117120493fdff675e601
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: AndroidToast
   - hash:
       serializedVersion: 2
       Hash: ff76cf6cf52b4db7b95af6ffadca9288

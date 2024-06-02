@@ -68,7 +68,7 @@ public class Score_object_controller : MonoBehaviour
     Vector3 Return_RandomPosition()
     {
         Vector3 ori = spawnPoint.transform.position;
-        float range_X = Random.Range(-1 * 1.8f, 2.2f);
+        float range_X = Random.Range(-1 * 1.6f, 2.0f);
         float range_Z = Random.Range(-2.2f, 2.3f);
         return new Vector3(range_X, ori.y + 0.5f, range_Z);
     }

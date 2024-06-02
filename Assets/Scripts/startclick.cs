@@ -32,6 +32,11 @@ public class startclick : MonoBehaviour
             achieve.gameObject.SetActive(!achieve.gameObject.activeSelf);
         }
     }
+
+    public void goto_shop()
+    {
+        AndroidToast.I.ShowToastMessage("Coming Soon!");
+    }
     // Start is called before the first frame update
     void Start()
     {

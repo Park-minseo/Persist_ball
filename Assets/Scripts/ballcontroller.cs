@@ -18,6 +18,8 @@ public class ballcontroller : MonoBehaviour
     public TextMeshProUGUI end_score;
     public TextMeshProUGUI end_best;
     public GameObject gameover;
+    private int cum_score = 0;
+    private int cum_time = 0;
     private int score = 0;
     bool isgameover = false;
 
@@ -29,6 +31,7 @@ public class ballcontroller : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         gameover.SetActive(false);
+        InvokeRepeating("time_scale", 1f, 1f);
     }
 
     // Update is called once per frame
@@ -37,6 +40,7 @@ public class ballcontroller : MonoBehaviour
         score_text.text = "Score : " + score;
         Transform objectTransform = GetComponent<Transform>();
         Vector3 currentPosition = objectTransform.position;
+
 
         if (currentPosition.y < -5)
         {
@@ -55,16 +59,36 @@ public class ballcontroller : MonoBehaviour
                 end_result.SetActive(true);
                 end_score.text = "Your Score \n" + score;
                 int bestScore = PlayerPrefs.GetInt(bestScoreKey, 0);
+
+                int cum_time_best = PlayerPrefs.GetInt("60 seconds!");
+                if(cum_time_best < cum_time)
+                {
+                    PlayerPrefs.SetInt("60 seconds!", cum_time);
+                }
+                cum_score = score + PlayerPrefs.GetInt("차곡차곡");
+                cum_time = cum_time + PlayerPrefs.GetInt("10000초를 투자했습니다");
+
+                float aim123 = PlayerPrefs.GetFloat("aim_setting");
+                if (aim123 == 0.8f && score > PlayerPrefs.GetInt("느림의 미학")) PlayerPrefs.SetInt("느림의 미학", score);
+                else if (aim123 == 5.0f && score > PlayerPrefs.GetInt("빨리 감기")) PlayerPrefs.SetInt("빨리감기", score);
+
+                if (score == 777) PlayerPrefs.SetInt("Lucky $lot 777", score);
+                PlayerPrefs.SetInt("차곡차곡", cum_score);
+                PlayerPrefs.SetInt("10000초를 투자했습니다", cum_time);
+                PlayerPrefs.Save();
                 if (score > bestScore)
                 {
                     PlayerPrefs.SetInt(bestScoreKey, score);
+                    PlayerPrefs.SetInt("전설의 시작", score);
+                    PlayerPrefs.SetInt("Beyound the developer", score);
+                   
+
+             
                     PlayerPrefs.Save();
                     end_best.text = "Best Score \n" + score;
                 }
-                else
-                {
-                    end_best.text = "Best Score \n" + bestScore;
-                }
+                else end_best.text = "Best Score \n" + bestScore;
+                
 
             }
 
@@ -87,9 +111,12 @@ public class ballcontroller : MonoBehaviour
     {
         if (coll.collider.gameObject.CompareTag("score"))
         {
-            this.transform.localScale += new Vector3(0.03f, 0.03f, 0.03f);
+            this.transform.localScale += new Vector3(0.01f, 0.01f, 0.01f);
             Destroy(coll.collider.gameObject);
             score += 100;
+            int iseat = 1;
+            PlayerPrefs.SetInt("Hello, World!", iseat);
+            PlayerPrefs.Save();
         }
     }
 
@@ -109,5 +136,12 @@ public class ballcontroller : MonoBehaviour
 
         Transform ballTransform = ball.transform;
         ballTransform.localScale = new Vector3(0.3f, 0.3f, 0.3f);
+    }
+
+    void time_scale()
+    {
+        this.transform.localScale += new Vector3(0.0001f, 0.0001f, 0.0001f);
+        cum_time++;
+        score += 1;
     }
 }
