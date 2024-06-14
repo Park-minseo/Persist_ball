@@ -99,10 +99,10 @@ public class AchievementManager : MonoBehaviour
         achievements.Add(new Achievement
         {
             name = "Beyond the developer",
-            description = "한 게임에서 최고기록 3536점 이상 \n달성하기",
+            description = "한 게임에서 최고기록 4072점 이상 \n달성하기",
             isUnlocked = 0,
             currentProgress = 0,
-            maxProgress = 3536,
+            maxProgress = 4071,
             uiInstance = achieve6
         });
 
@@ -119,10 +119,10 @@ public class AchievementManager : MonoBehaviour
         achievements.Add(new Achievement
         {
             name = "5000초를 투자했습니다",
-            description = "누적 플레이 시간 \n50000초 이상 달성하기",
+            description = "누적 플레이 시간 \n5000초 이상 달성하기",
             isUnlocked = 0,
             currentProgress = 0,
-            maxProgress = 50000,
+            maxProgress = 5000,
             uiInstance = achieve8
         });
         achievements.Add(new Achievement

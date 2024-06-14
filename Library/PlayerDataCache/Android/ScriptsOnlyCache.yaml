@@ -29,10 +29,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -101,13 +99,7 @@ ScriptsOnlyBuild:
   methodsToPreserve:
   - assembly: Assembly-CSharp
     fullTypeName: AchievementManager
-    methodName: reward0
-  - assembly: Assembly-CSharp
-    fullTypeName: gold_manager
-    methodName: gold_update
-  - assembly: Assembly-CSharp
-    fullTypeName: AchievementManager
-    methodName: reward5
+    methodName: reward7
   - assembly: Assembly-CSharp
     fullTypeName: gold_manager
     methodName: gold_update
@@ -119,25 +111,7 @@ ScriptsOnlyBuild:
     methodName: gold_update
   - assembly: Assembly-CSharp
     fullTypeName: AchievementManager
-    methodName: reward7
-  - assembly: Assembly-CSharp
-    fullTypeName: gold_manager
-    methodName: gold_update
-  - assembly: Assembly-CSharp
-    fullTypeName: AchievementManager
-    methodName: reward4
-  - assembly: Assembly-CSharp
-    fullTypeName: gold_manager
-    methodName: gold_update
-  - assembly: Assembly-CSharp
-    fullTypeName: AchievementManager
-    methodName: reward1
-  - assembly: Assembly-CSharp
-    fullTypeName: gold_manager
-    methodName: gold_update
-  - assembly: Assembly-CSharp
-    fullTypeName: AchievementManager
-    methodName: reward3
+    methodName: reward2
   - assembly: Assembly-CSharp
     fullTypeName: gold_manager
     methodName: gold_update
@@ -149,7 +123,31 @@ ScriptsOnlyBuild:
     methodName: gold_update
   - assembly: Assembly-CSharp
     fullTypeName: AchievementManager
-    methodName: reward2
+    methodName: reward5
+  - assembly: Assembly-CSharp
+    fullTypeName: gold_manager
+    methodName: gold_update
+  - assembly: Assembly-CSharp
+    fullTypeName: AchievementManager
+    methodName: reward3
+  - assembly: Assembly-CSharp
+    fullTypeName: gold_manager
+    methodName: gold_update
+  - assembly: Assembly-CSharp
+    fullTypeName: AchievementManager
+    methodName: reward4
+  - assembly: Assembly-CSharp
+    fullTypeName: gold_manager
+    methodName: gold_update
+  - assembly: Assembly-CSharp
+    fullTypeName: AchievementManager
+    methodName: reward0
+  - assembly: Assembly-CSharp
+    fullTypeName: gold_manager
+    methodName: gold_update
+  - assembly: Assembly-CSharp
+    fullTypeName: AchievementManager
+    methodName: reward1
   - assembly: Assembly-CSharp
     fullTypeName: gold_manager
     methodName: gold_update
@@ -250,7 +248,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 21470}
     - Class: 114
-      Script: {instanceID: 23682}
+      Script: {instanceID: 24160}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 135
@@ -1357,4 +1355,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/Main_room.unity
   - Assets/Scenes/Game_playing.unity
   - Assets/Scenes/Setting_room.unity
-  playerPath: C:/Users/simd3/Downloads/2024_05_10_5.apk
+  playerPath: C:/Users/simd3/Downloads/persist_ball1.apk
