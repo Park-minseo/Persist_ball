@@ -34,6 +34,7 @@ public class AchievementManager : MonoBehaviour
     public GameObject achieve8;
     public GameObject achieve9;
     public GameObject achieve10;
+    public GameObject achieve11;
     public GameObject gold_script;
     private int isclear = 0;
 
@@ -118,11 +119,11 @@ public class AchievementManager : MonoBehaviour
         });
         achievements.Add(new Achievement
         {
-            name = "5000초를 투자했습니다",
-            description = "누적 플레이 시간 \n5000초 이상 달성하기",
+            name = "1000초를 투자했습니다",
+            description = "누적 플레이 시간 \n1000초 이상 달성하기",
             isUnlocked = 0,
             currentProgress = 0,
-            maxProgress = 5000,
+            maxProgress = 1000,
             uiInstance = achieve8
         });
         achievements.Add(new Achievement
@@ -134,7 +135,15 @@ public class AchievementManager : MonoBehaviour
             maxProgress = 50000,
             uiInstance = achieve9
         });
-
+        achievements.Add(new Achievement
+        {
+            name = "적응의 신",
+            description = "랜덤 주기 모드에서 \n1000점 이상 달성하기",
+            isUnlocked = 0,
+            currentProgress = 0,
+            maxProgress = 1000,
+            uiInstance = achieve10
+        });
 
         LoadProgress();
         SaveProgress();
@@ -314,7 +323,7 @@ public class AchievementManager : MonoBehaviour
             isclear = 1;
             PlayerPrefs.SetInt(achievements[n].name + "lock", isclear);
             if (PlayerPrefs.HasKey("gold_data")) fake_gold = PlayerPrefs.GetInt("gold_data");
-            fake_gold += 3535;
+            fake_gold += 4071;
             PlayerPrefs.SetInt("gold_data", fake_gold);
 
             gold_script.GetComponent<gold_manager>().gold_update();
@@ -377,7 +386,28 @@ public class AchievementManager : MonoBehaviour
             isclear = 1;
             PlayerPrefs.SetInt(achievements[n].name + "lock", isclear);
             if (PlayerPrefs.HasKey("gold_data")) fake_gold = PlayerPrefs.GetInt("gold_data");
-            fake_gold += 20000;
+            fake_gold += 10000;
+            PlayerPrefs.SetInt("gold_data", fake_gold);
+
+            gold_script.GetComponent<gold_manager>().gold_update();
+        }
+        else if (isclear == 1) AndroidToast.I.ShowToastMessage("이미 보상을 받은 업적입니다.");
+
+        isclear = 0;
+    }
+    public void reward9()
+    {
+        int n = 9;
+        isclear = PlayerPrefs.GetInt(achievements[n].name + "lock");
+        if (achievements[n].currentProgress < achievements[n].maxProgress)
+            AndroidToast.I.ShowToastMessage("완료하지 못한 업적입니다.");
+
+        else if (isclear == 0 && achievements[n].currentProgress >= achievements[n].maxProgress)
+        {
+            isclear = 1;
+            PlayerPrefs.SetInt(achievements[n].name + "lock", isclear);
+            if (PlayerPrefs.HasKey("gold_data")) fake_gold = PlayerPrefs.GetInt("gold_data");
+            fake_gold += 4000;
             PlayerPrefs.SetInt("gold_data", fake_gold);
 
             gold_script.GetComponent<gold_manager>().gold_update();

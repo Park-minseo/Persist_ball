@@ -9,6 +9,7 @@ public class ballcontroller : MonoBehaviour
 {
     private Rigidbody rb;
     public GameObject ball;
+    public int current_mode = -1;
     public GameObject end_result;
     public GameObject cube;
     private float idleTime = 0f;
@@ -25,13 +26,20 @@ public class ballcontroller : MonoBehaviour
 
     // 최고 점수를 저장할 키
     private string bestScoreKey = "BestScore";
-
+    private string mod1best = "mod1bestkey";
+    private string mod2best = "mod2bestkey";
+    private string eatKey = "objecteat";
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         gameover.SetActive(false);
         InvokeRepeating("time_scale", 1f, 1f);
+        Scene scene = SceneManager.GetActiveScene();
+        if (scene.name == "Setting_room" || scene.name == "Main_room") current_mode = -1;
+        else if (scene.name == "Game_playing") current_mode = 0;
+        else if (scene.name == "mod1") current_mode = 1;
+        else if (scene.name == "mod2") current_mode = 2;
     }
 
     // Update is called once per frame
@@ -40,7 +48,6 @@ public class ballcontroller : MonoBehaviour
         score_text.text = "Score : " + score;
         Transform objectTransform = GetComponent<Transform>();
         Vector3 currentPosition = objectTransform.position;
-
 
         if (currentPosition.y < -5)
         {
@@ -58,37 +65,63 @@ public class ballcontroller : MonoBehaviour
                 gameover.SetActive(true);
                 end_result.SetActive(true);
                 end_score.text = "Your Score \n" + score;
-                int bestScore = PlayerPrefs.GetInt(bestScoreKey, 0);
 
-                int cum_time_best = PlayerPrefs.GetInt("60 seconds!");
-                if(cum_time_best < cum_time)
+                if (current_mode == 0)
                 {
-                    PlayerPrefs.SetInt("60 seconds!", cum_time);
-                }
-                cum_score = score + PlayerPrefs.GetInt("차곡차곡");
-                cum_time = cum_time + PlayerPrefs.GetInt("10000초를 투자했습니다");
+                    int bestScore = PlayerPrefs.GetInt(bestScoreKey, 0);
 
-                float aim123 = PlayerPrefs.GetFloat("aim_setting");
-                if (aim123 == 0.8f && score > PlayerPrefs.GetInt("느림의 미학")) PlayerPrefs.SetInt("느림의 미학", score);
-                else if (aim123 == 5.0f && score > PlayerPrefs.GetInt("빨리 감기")) PlayerPrefs.SetInt("빨리감기", score);
+                    int cum_time_best = PlayerPrefs.GetInt("60 seconds!");
+                    if (cum_time_best < cum_time)
+                    {
+                        PlayerPrefs.SetInt("60 seconds!", cum_time);
+                    }
+                    cum_score = score + PlayerPrefs.GetInt("차곡차곡");
+                    cum_time = cum_time + PlayerPrefs.GetInt("1000초를 투자했습니다");
 
-                if (score == 777) PlayerPrefs.SetInt("Lucky $lot 777", score);
-                PlayerPrefs.SetInt("차곡차곡", cum_score);
-                PlayerPrefs.SetInt("10000초를 투자했습니다", cum_time);
-                PlayerPrefs.Save();
-                if (score > bestScore)
-                {
-                    PlayerPrefs.SetInt(bestScoreKey, score);
-                    PlayerPrefs.SetInt("전설의 시작", score);
-                    PlayerPrefs.SetInt("Beyound the developer", score);
-                   
+                    float aim123 = PlayerPrefs.GetFloat("aim_setting");
+                    if (aim123 == 0.8f && score > PlayerPrefs.GetInt("느림의 미학")) PlayerPrefs.SetInt("느림의 미학", score);
+                    else if (aim123 == 5.0f && score > PlayerPrefs.GetInt("빨리 감기")) PlayerPrefs.SetInt("빨리감기", score);
 
-             
+                    if (score == 777) PlayerPrefs.SetInt("Lucky $lot 777", score);
+                    PlayerPrefs.SetInt("차곡차곡", cum_score);
+                    PlayerPrefs.SetInt("1000초를 투자했습니다", cum_time);
                     PlayerPrefs.Save();
-                    end_best.text = "Best Score \n" + score;
+                    if (score > bestScore)
+                    {
+                        PlayerPrefs.SetInt(bestScoreKey, score);
+                        PlayerPrefs.SetInt("전설의 시작", score);
+                        PlayerPrefs.SetInt("Beyound the developer", score);
+
+
+
+                        PlayerPrefs.Save();
+                        end_best.text = "Best Score \n" + score;
+                    }
+                    else end_best.text = "Best Score \n" + bestScore;
                 }
-                else end_best.text = "Best Score \n" + bestScore;
-                
+                else if (current_mode == 1)
+                {
+                    int bestScore = PlayerPrefs.GetInt(mod1best, 0);
+                    if (score > bestScore)
+                    {
+                        PlayerPrefs.SetInt("적응의 신", score);
+                        PlayerPrefs.SetInt(mod1best, score);
+                        PlayerPrefs.Save();
+                        end_best.text = "Best Score \n" + score;
+                    }
+                    else end_best.text = "Best Score \n" + bestScore;
+                }
+                else if (current_mode == 2)
+                {
+                    int bestScore = PlayerPrefs.GetInt(mod2best, 0);
+                    if (score > bestScore)
+                    {
+                        PlayerPrefs.SetInt(mod2best, score);
+                        PlayerPrefs.Save();
+                        end_best.text = "Best Score \n" + score;
+                    }
+                    else end_best.text = "Best Score \n" + bestScore;
+                }
 
             }
 
@@ -115,6 +148,18 @@ public class ballcontroller : MonoBehaviour
             Destroy(coll.collider.gameObject);
             score += 100;
             int iseat = 1;
+
+            int eat = PlayerPrefs.GetInt(eatKey, 0);
+            eat++;
+            PlayerPrefs.SetInt(eatKey, eat);
+            int get_gold = Random.Range(0, 4);
+            if(get_gold == 0)
+            {
+                int fake_gold = 0;
+                if (PlayerPrefs.HasKey("gold_data")) fake_gold = PlayerPrefs.GetInt("gold_data");
+                fake_gold += 10;
+                PlayerPrefs.SetInt("gold_data", fake_gold);
+            }
             PlayerPrefs.SetInt("Hello, World!", iseat);
             PlayerPrefs.Save();
         }

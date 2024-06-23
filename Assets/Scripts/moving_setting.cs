@@ -45,7 +45,7 @@ public class moving_setting : MonoBehaviour
     {
         reset_time += Time.deltaTime;
 
-        transform.Rotate(Input.gyro.rotationRateUnbiased.x * aim, 0, Input.gyro.rotationRateUnbiased.y * aim);
+        transform.Rotate(Input.gyro.rotationRateUnbiased.x * aim, 0, -1 * Input.gyro.rotationRateUnbiased.y * aim);
 
         if (reset_time >= 7f)
         {

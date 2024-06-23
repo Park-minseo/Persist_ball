@@ -9,6 +9,7 @@ public class Score_object_controller : MonoBehaviour
     public GameObject scorePrefab; // 프리팹화된 보석
     public GameObject spawnPoint; // 생성 
     public GameObject ball;
+    public GameObject ball2;
     private bool isempty = true;
   
     private Queue<GameObject> pools = new Queue<GameObject>(); // 풀
